@@ -5,23 +5,22 @@ export default {
     /* Vil du overskrive eller extende tailwinds indstillinger?  */
 
 	theme: {
-
-        /* Tilføj din egen farvepalette nedenfor */
-        // colors: {
-        //     transparent: 'transparent',
-        //     current: 'currentColor',
-        //     'farvenavn': {
-        //         50: '#hexkode',     
-        //         100: '#hexkode',
-        //         200: '#hexkode',
-        //         300: '#hexkode',
-        //         400: '#hexkode',
-        //         500: '#hexkode',
-        //         600: '#hexkode',
-        //         700: '#hexkode',
-        //         800: '#hexkode',
-        //         900: '#hexkode',
-        //     },
+colors: {
+ transparent: 'transparent',
+ current: 'currentColor',
+ 'brun': {
+    50: '#F0E5E5',     
+    100: '#DFC8C8',
+    200: '#C29494',
+    300: '#A35D5D',
+    400: '#6F3F3F',
+    500: '#382020',
+    600: '#2D1A1A',
+    700: '#201313',
+    800: '#180D0D',
+    900: '#0A0606',
+    950:'#060404',
+},
         //     'white': '#fff',
         //     'black': '#000',
         // },
@@ -75,4 +74,4 @@ export default {
         require('@tailwindcss/aspect-ratio'),
         require('@tailwindcss/container-queries'),
     ],
-}
+    }}
