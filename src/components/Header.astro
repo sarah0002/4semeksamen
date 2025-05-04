@@ -1,6 +1,44 @@
 ---
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.png";
 ---
-<div class="max-w-screen-xl mx-auto text-white">
-    Header/Navigation
+
+<div x-data="{ showmenu: false }" class="p-4 lg:static w-full bg-slate-200">
+  <div id="navbar" class="flex flex-row justify-between">
+    <div id="logo" class="">
+      <a href="/"> <Image src={logo} alt="Logo " class="h-[100px] w-auto" /></a>
+    </div>
+    <nav id="desktopmenu" class="hidden lg:block">
+      <ul class="flex flex-row gap-M items-center">
+        <li class=""><Link href="#">EVENTS OG CATERING</Link></li>
+        <li class=""><Link href="#">VORES IS</Link></li>
+        <li class=""><Link href="#">OM OS</Link></li>
+
+        <li class=""><Link href="#">KONTAKT</Link></li>
+      </ul>
+    </nav>
+    <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"
+      >Menu</button
+    >
+  </div>
+  <nav
+    id="mobilmenu"
+    class="flex flex-col content-center pt-4"
+    x-show="showmenu"
+    x-transition
+    x-on:click="showmenu = false"
+    x-on:click.outside="showmenu = false"
+  >
+    <ul class="font-worksans text-center p-M">
+      <li class="">
+        <Link href="#">EVENTS OG CATERING</Link>
+      </li>
+      <li class="">
+        <Link href="#">VORES IS</Link>
+      </li>
+      <li class=""><Link href="#">OM OS</Link></li>
+      <li class=""><Link href="#">KONTAKT</Link></li>
+    </ul>
+  </nav>
 </div>
-    
