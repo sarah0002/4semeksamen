@@ -66,7 +66,6 @@ colors: {
 
 
 spacing: {
-    
  'XXXS': '5px',
  'XXS': '10px',
  'XS': '15px',
@@ -78,7 +77,7 @@ spacing: {
 
         /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
 fontFamily: {
-worksans: ['WorkSans', 'sans-serif'],
+worksans: ['Work Sans', 'sans-serif'],
 minfont: ['Rothenburg-Bold', 'sans-serif'],
 
  },
@@ -86,10 +85,10 @@ minfont: ['Rothenburg-Bold', 'sans-serif'],
         /* Tilføj dit typografiske hierarki herunder */
         fontSize: {
             p_desk: ['20px', { lineHeight: '1.25rem' }],
-            pstor_desk: ['28px', { lineHeight: '2rem' }],
+            pstor_desk: ['26px', { lineHeight: '2rem' }],
             h3_desk: ['32px', { lineHeight: '3rem' }],
             h2_desk: ['48px', { lineHeight: '3.75rem' }],
-            h1_desk: ['65px', { lineHeight: '4.5rem' }],
+            h1_desk: ['65px', { lineHeight: '4.5rem' },],
             
             p_mobil: ['12px', { lineHeight: '1.25rem' }],
             pstor_mobil: ['15px', { lineHeight: '1.25rem' }],

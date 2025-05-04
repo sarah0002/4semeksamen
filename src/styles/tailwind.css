@@ -1,9 +1,22 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
 
+
+
+
 @layer base{
-    /* p{
-        @apply text-body;
-    } */
+    .h1 {
+    @apply font-minfont uppercase text-h1_desk;
+  }
+
+  .h2 {
+    @apply font-worksans uppercase text-h2_desk font-bold;
+  }
+
+  .h3 {
+    @apply font-worksans uppercase text-h3_desk font-semibold;
+  }
+
+  .pstor {
+    @apply font-worksans text-pstor_desk;}
 }
