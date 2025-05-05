@@ -15,10 +15,10 @@
   }
 
   .pstor {
-    @apply font-worksans text-pstor_desk;}
+    @apply font-worksans text-pstor_desk;
+  }
 }
-@apply font-worksans text-pstor_desk;
-}
+
 .h1_mobil {
   @apply font-minfont uppercase text-h1_mobil;
 }
