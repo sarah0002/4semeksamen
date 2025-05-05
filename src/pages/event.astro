@@ -15,7 +15,7 @@ import workshop from "../assets/images/workshop.webp";
       <h1 class="h1_mobil text-blaa-600 text-center md:h1">
         events og catering
       </h1>
-      <p class="pstor_mobil text-blaa-900 text-center md:pstor">
+      <p class="pstor_mobil text-blaa-900 text-center md:p">
         Vi laver økologisk is til events – live med flydende nitrogen for både
         show og smag. Vælg mellem klassiske eller alkoholiske varianter med
         hjemmelavede toppings. Vi skaber en unik oplevelse, uanset typen af
@@ -30,7 +30,7 @@ import workshop from "../assets/images/workshop.webp";
         <h3 class="h3_mobil text-rod-500 md:h3">
           Istid står klar til tjeneste
         </h3>
-        <p class="pstor_mobil text-blaa-900">
+        <p class="pstor_mobil text-blaa-900 md:p">
           Står du og mangler et indslag til dit næste event? Vi står klar til
           tjeneste – uanset om det er konfirmation, bryllup eller firmafest. Om
           du har en stor have eller et fyldt konferencelokale, så finder vi en
@@ -53,7 +53,7 @@ import workshop from "../assets/images/workshop.webp";
         <h2 class="h2_mobil text-gron-800 md:h2 md:text-center">
           vors muligheder
         </h2>
-        <p class="pstor_mobil text-gron-800 md:text-center">
+        <p class="pstor_mobil text-gron-800 md:text-center md:p">
           Vi tilbyder tre unikke måder at bringe isen ud til jer på – vælg
           mellem vores pop-up isstand, ikoniske isbrandbil eller en kreativ
           teambuilding workshop.
@@ -346,7 +346,9 @@ import workshop from "../assets/images/workshop.webp";
               </clipPath>
             </defs>
           </svg>
-          <p class="pstor_mobil text-gron-800 text-center py-S">pop-up stand</p>
+          <p class="pstor_mobil text-gron-800 text-center py-S md:p">
+            pop-up stand
+          </p>
         </div>
         <div class="my-XS">
           <svg
@@ -838,7 +840,7 @@ import workshop from "../assets/images/workshop.webp";
               </clipPath>
             </defs>
           </svg>
-          <p class="pstor_mobil text-gron-800 text-center py-S">
+          <p class="pstor_mobil text-gron-800 text-center py-S md:p">
             teambuilding workshop
           </p>
         </div>
@@ -1319,18 +1321,18 @@ import workshop from "../assets/images/workshop.webp";
               </clipPath>
             </defs>
           </svg>
-          <p class="pstor_mobil text-gron-800 text-center py-S">
+          <p class="pstor_mobil text-gron-800 text-center py-S md:p">
             isbrandbil/cykel
           </p>
         </div>
       </section>
     </section>
     <section class="bg-rod-50 p-M md:p-L md:grid md:grid-cols-2">
-      <section>
-        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-start">
+      <section class="order-1 md:order-2 md:self-end">
+        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
           pop up is-stand
         </h2>
-        <p class="pstor_mobil text-blaa-900 text-center">
+        <p class="pstor_mobil text-blaa-900 text-center md:p md:text-end">
           Et populært valg til konferencer og messer – eller som en ekstra
           forkælelse til medarbejderne i kantinen. Pop-up-formatet giver
           uendelige muligheder. Vi kan servere for alt fra 100 til 2000 gæster
@@ -1341,21 +1343,21 @@ import workshop from "../assets/images/workshop.webp";
           eller produkt. Alt, vi behøver, er et bord og adgang til strøm.
         </p>
       </section>
-      <section>
+      <section class="order-2 md:order-1">
         <Image
           src={popup}
           alt="Billede af et isevent."
-          class="h-[300px] w-[300px] rounded-[300px] object-cover mx-auto mt-S"
+          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover mx-auto mt-S md:mx-0"
           loading="lazy"
         />
       </section>
     </section>
-    <section class="bg-gul-100 p-M md:p-L">
-      <section>
-        <h2 class="h2_mobil text-rod-500 text-center pb-XS">
+    <section class="bg-gul-100 p-M md:p-L md:grid md:grid-cols-2">
+      <section class="md:self-end">
+        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-start">
           TEAMBUILDING wORKSHOP
         </h2>
-        <p class="pstor_mobil text-blaa-900 text-center">
+        <p class="pstor_mobil text-blaa-900 text-center md:p md:text-start">
           Som et nyt tilbud afholder vi sjove og kreative is-workshops, hvor
           deltagerne i par får lov til selv at fryse deres egen is ved hjælp af
           flydende nitrogen og almindeligt køkkenudstyr. Øvelsen er en sjov og
@@ -1367,15 +1369,17 @@ import workshop from "../assets/images/workshop.webp";
         <Image
           src={workshop}
           alt="Billede af et isevent."
-          class="h-[300px] w-[300px] rounded-[300px] object-cover mx-auto mt-S"
+          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover mx-auto mt-S"
           loading="lazy"
         />
       </section>
     </section>
-    <section class="bg-blaa-50 p-M md:p-L">
-      <section>
-        <h2 class="h2_mobil text-rod-500 text-center pb-XS">is brandbil</h2>
-        <p class="pstor_mobil text-blaa-900 text-center">
+    <section class="bg-blaa-50 p-M md:p-L md:grid md:grid-cols-2">
+      <section class="order-1 md:order-2 md:self-end">
+        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
+          is brandbil
+        </h2>
+        <p class="pstor_mobil text-blaa-900 text-center md:p md:text-end">
           Perfekt til udendørs sommerfester, musikfestivaler, bryllupper eller
           det store kundeevent i virksomheden... ISTIDs retro brandbil er en 50
           år gammel dame, der kan få alle til at smile. Med sit skinnende røde
@@ -1385,11 +1389,11 @@ import workshop from "../assets/images/workshop.webp";
           til arrangementer på Sjælland.)
         </p>
       </section>
-      <section>
+      <section class="order-2 md:order-1">
         <Image
           src={brandbil}
           alt="Billede af et isevent."
-          class="h-[300px] w-[300px] rounded-[300px] object-cover mx-auto mt-S"
+          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover mx-auto mt-S"
           loading="lazy"
         />
       </section>
@@ -1399,62 +1403,68 @@ import workshop from "../assets/images/workshop.webp";
         <h2 class="h2_mobil text-rod-500 text-center">
           Få et uforpligtet tilbud
         </h2>
-        <p class="pstor_mobil text-blaa-900 text-center">
+        <p class="pstor_mobil text-blaa-900 text-center md:p">
           Udfyld nedenstående formular og vi vender tilbage med et uforpligtende
           tilbu
         </p>
       </div>
-      <div>
+      <div class="flex items-center justify-center min-h-screen">
         <form class="w-full max-w-md p-6 rounded space-y-4 text-blaa-500">
           <!-- Input felter -->
-          <input
-            class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
-            type="text"
-            placeholder="Navn *"
-            required
-          />
-          <input
-            class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
-            type="email"
-            placeholder="Email *"
-            required
-          />
-          <input
-            class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
-            type="text"
-            placeholder="Efternavn *"
-            required
-          />
-          <input
-            class="w-full border border-blaa-500 rounded-medium p-XXS mt-XXS mb-M"
-            type="tel"
-            placeholder="Telefonnummer *"
-            required
-          />
-          <input
-            class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
-            type="text"
-            placeholder="Dato for event *"
-            required
-          />
-          <input
-            class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
-            type="text"
-            placeholder="Adresse/Lokation *"
-            required
-          />
-          <input
-            class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
-            type="text"
-            placeholder="Tidspunkt for event *"
-            required
-          />
-          <input
-            class="w-full border border-blaa-500 rounded-medium p-XXS mt-XXS mb-M"
-            type="number"
-            placeholder="Antal gæster *"
-            required
-          />
+          <div class="md:grid md:grid-cols-2 md:gap-S">
+            <div>
+              <input
+                class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
+                type="text"
+                placeholder="Navn *"
+                required
+              />
+              <input
+                class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
+                type="email"
+                placeholder="Email *"
+                required
+              />
+              <input
+                class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
+                type="text"
+                placeholder="Efternavn *"
+                required
+              />
+              <input
+                class="w-full border border-blaa-500 rounded-medium p-XXS mt-XXS mb-M"
+                type="tel"
+                placeholder="Telefonnummer *"
+                required
+              />
+            </div>
+            <div>
+              <input
+                class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
+                type="text"
+                placeholder="Dato for event *"
+                required
+              />
+              <input
+                class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
+                type="text"
+                placeholder="Adresse/Lokation *"
+                required
+              />
+              <input
+                class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
+                type="text"
+                placeholder="Tidspunkt for event *"
+                required
+              />
+              <input
+                class="w-full border border-blaa-500 rounded-medium p-XXS mt-XXS mb-M"
+                type="number"
+                placeholder="Antal gæster *"
+                required
+              />
+            </div>
+          </div>
 
           <!-- Kategori knapper -->
           <div class="space-y-2">
