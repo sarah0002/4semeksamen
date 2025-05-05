@@ -4,3 +4,130 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 ---
+
+<MainLayout title="omos">
+  <section>
+    <div class="bg-gul-400 text-center py-L px-M">
+      <h1 class="h1_mobil md:h1 text-rod-500">Hvem er istid</h1>
+      <p class="pstor_mobil md:pstor text-blaa-900">
+        Hos ISTID elsker vi at trylle med flydende nitrogen og økologiske
+        råvarer, og invitere dig med på en smagsrejse, hvor videnskab møder
+        økologi og skaber magi i hver eneste skefuld.
+      </p>
+    </div>
+
+    <div class="bg-blaa-100 py-M px-M md:m-M">
+      <h2 class="h2_mobil md:h2 text-blaa-600 text-center md:text-left pb-XS">
+        Historien
+      </h2>
+      <p class="p_mobil md:p text-blaa-900 text-center md:text-left">
+        Istid blev grundlagt i 2014 af Anniken og Nina, drevet af ønsket om at
+        skabe en anderledes isoplevelse. Inspireret af flydende nitrogen-is, som
+        Anniken først oplevede på en rejse til San Francisco i 2012, besluttede
+        de at bringe denne unikke ismetode til Danmark. Fra starten serverede de
+        is på festivaler og gader, og i 2015 åbnede de deres første butik. I dag
+        er Anniken den eneste ejer og driver virksomheden med fokus på at levere
+        en lokal og unik isoplevelse. Istid er ikke kun en butik, men også en
+        cateringservice, der tilbyder is til virksomheder og events.
+      </p>
+      <img src="" alt="" />
+    </div>
+
+    <div class="bg-rod-50 py-M px-M md:m-M">
+      <h2 class="h2_mobil md:h2 text-blaa-600 text-center md:text-right">
+        Hvad der gør os unikke
+      </h2>
+      <p class="p_mobil md:p text-blaa-900 text-center md:text-right">
+        Vi er de eneste i Danmark, der fryser vores is med flydende nitrogen –
+        direkte foran dig. Det betyder, at vi kan lave frisk is på få sekunder,
+        hvilket giver en helt særlig, cremet konsistens, du ikke finder andre
+        steder.  Samtidig bruger vi økologiske råvarer og mindre sukker end
+        traditionel is, uden at gå på kompromis med smagen. Hos ISTID handler
+        det om rene ingredienser, ægte smagsoplevelser og en is, der både føles
+        lettere og smager friskere.
+      </p>
+      <img src="" alt="" />
+    </div>
+
+    <div class="bg-gron-300 grid md:grid-cols-2">
+      <div class="py-M px-M">
+        <h2 class="h2_mobil md:h2 text-gron-800 pb-XS">
+          I gør os til dem vi er
+        </h2>
+        <p class="pb-S p_mobil md:p">
+          Vi går højt op i at skabe en nærværende og personlig oplevelse, hver
+          gang du besøger os. For os handler det ikke bare om at servere is, men
+          om at lære vores gæster at kende – vi vil kunne huske vores stamkunder
+          og deres yndlingssmage.
+        </p>
+        <p class="p_mobil md:p">
+          Vi tror på, at det er de små detaljer og den ægte kontakt, der gør
+          oplevelsen hos ISTID noget særligt. Når du træder ind hos os, skal det
+          føles som mere end et køb – det skal føles som et besøg hos nogen, der
+          glæder sig til at se dig igen.
+        </p>
+      </div>
+      <div>
+        <img src="/public/spiseis.webp" alt="Anniken og barn spiser is" />
+      </div>
+    </div>
+
+    <div class="bg-gul-400 px-M">
+      <div class="text-center">
+        <h2 class="h2_mobil md:h2 text-rod-500 pb-XS py-M">
+          Vores bæredygtige tiltag
+        </h2>
+        <p class="p_mobil md:p text-blaa-900 max-w-3xl">
+          Hos ISTID er vi i evig søgen efter den bedste og mest bæredygtige
+          emballage, men det er ikke altid at det er muligt, at finde emballage,
+          der både lever op til vores krav om bæredygtighed og vores høje
+          standarder for brugervenlighed.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 pt-M">
+        <div>
+          <div>
+            <h2 class="h2_mobil md:h2 text-rod-500 text-center">
+              engangsservice
+            </h2>
+            <p class="p_mobil md:p text-blaa-900 text-center">
+              Skeer og bægre er lavet af træ og komposterbart bambuspapir
+            </p>
+          </div>
+          <img
+            src="/public/engangsservice.webp"
+            alt="billede af engangsservice fra butikken"
+          />
+        </div>
+        <div>
+          <div>
+            <h2 class="h2_mobil md:h2 text-rod-500 text-center">
+              økologiske råvarer
+            </h2>
+            <p class="p_mobil md:p text-blaa-900 text-center">
+              Vi bruger udelukkende økologiske råvarer i vores is
+            </p>
+          </div>
+          <img src="/public/økoråvarer.webp" alt="billede af øko råvarer" />
+        </div>
+
+        <div>
+          <div>
+            <h2 class="h2_mobil md:h2 text-rod-500 text-center">
+              følger med sæsonen
+            </h2>
+            <p class="p_mobil md:p text-blaa-900 text-center">
+              Vores smagsvarianter følger sæsonen og skifter efter årstidens
+              råvarer
+            </p>
+          </div>
+          <img
+            src="/public/følgersæson.webp"
+            alt="billede af forskellige isvarianter"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>
