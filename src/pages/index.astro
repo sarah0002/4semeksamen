@@ -1,6 +1,10 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
+import Button_Gul from "../components/Button_Gul.astro";
+import Button_S_Gul from "../components/Button_S_Gul.astro";
+import Button_S_Rod from "../components/Button_S_Rod.astro";
+
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import scooper from "../assets/images/scooper.webp";
@@ -19,6 +23,7 @@ import saesonis from "../assets/images/saesonis.webp";
       <p class="pstor text-blaa-600">
         Håndlavet økologisk nitrogen is til hverdag og events
       </p>
+      <Button>Book os nu</Button>
     </section>
     <section class="text-center p-M">
       <h2 class="h2 text-rod-500">Økologisk nitrogen is</h2>
@@ -48,11 +53,12 @@ import saesonis from "../assets/images/saesonis.webp";
     </section>
     <section class="bg-rod-100 md:grid grid-cols-2">
       <div>
-        <h2 class="h2 text-blaa-600 p-S">EVENTS OG CATERING</h2>
-        <p class="pstor text-rod-500 p-S">
+        <h2 class="h2 text-blaa-600">EVENTS OG CATERING</h2>
+        <p class="pstor text-rod-500">
           Gør dit event til en uforglemmelig oplevelse <br /> Book vores
           nitrogen-is catering i dag
         </p>
+        <Button_S_Rod>BOOK NU</Button_S_Rod>
       </div>
       <div class="p-S">
         <svg
@@ -302,6 +308,7 @@ import saesonis from "../assets/images/saesonis.webp";
       <p class="pstor">
         Kom forbi vores butik og se hvad sæsonen bringer af gode varianter.
       </p>
+      <Button_S_Gul>Se vores smage her</Button_S_Gul>
       <div>
         <Image
           src={saesonis}
