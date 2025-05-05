@@ -1,11 +1,8 @@
 @tailwind base;
 @tailwind utilities;
 
-
-
-
-@layer base{
-    .h1 {
+@layer base {
+  .h1 {
     @apply font-minfont uppercase text-h1_desk;
   }
 
@@ -18,5 +15,21 @@
   }
 
   .pstor {
-    @apply font-worksans text-pstor_desk;}
+    @apply font-worksans text-pstor_desk;
+  }
+  .h1_mobil {
+    @apply font-minfont uppercase text-h1_mobil;
+  }
+
+  .h2_mobil {
+    @apply font-worksans uppercase text-h2_mobil font-bold;
+  }
+
+  .h3_mobil {
+    @apply font-worksans uppercase text-h3_mobil font-semibold;
+  }
+
+  .pstor_mobil {
+    @apply font-worksans text-pstor_mobil;
+  }
 }
