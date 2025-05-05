@@ -15,7 +15,11 @@
   }
 
   .pstor {
-    @apply font-worksans text-pstor_desk;
+    @apply font-worksans uppercase text-pstor_desk;
+  }
+
+  .p {
+    @apply font-worksans text-p_desk;
   }
 }
 
@@ -32,5 +36,9 @@
 }
 
 .pstor_mobil {
-  @apply font-worksans text-pstor_mobil;
+  @apply font-worksans uppercase text-pstor_mobil;
 }
+
+.p_mobil {
+    @apply font-worksans text-p_mobil;
+  }
