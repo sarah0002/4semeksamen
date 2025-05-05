@@ -72,12 +72,12 @@ import { Image } from "astro:assets";
       </div>
     </div>
 
-    <div class="bg-gul-400 px-M">
-      <div class="text-center">
-        <h2 class="h2_mobil md:h2 text-rod-500 pb-XS py-M">
+    <div class="bg-gul-400 px-M py-L">
+      <div class="flex flex-col items-center justify-center text-center">
+        <h2 class="h2_mobil md:h2 text-rod-500 pb-XS">
           Vores bæredygtige tiltag
         </h2>
-        <p class="p_mobil md:p text-blaa-900 max-w-3xl">
+        <p class="p_mobil md:p text-blaa-900 max-w-3xl pb-M md:pb-XL">
           Hos ISTID er vi i evig søgen efter den bedste og mest bæredygtige
           emballage, men det er ikke altid at det er muligt, at finde emballage,
           der både lever op til vores krav om bæredygtighed og vores høje
@@ -85,39 +85,44 @@ import { Image } from "astro:assets";
         </p>
       </div>
 
-      <div class="grid md:grid-cols-3 pt-M">
-        <div>
-          <div>
-            <h2 class="h2_mobil md:h2 text-rod-500 text-center">
+      <div class="grid md:grid-cols-3 pt-L gap-XL justify-center">
+        <div class="relative">
+          <div
+            class="bg-blaa-100 rounded-[600px] absolute bottom-[160px] md:bottom-[220px] left-[-5px] md:left-[-25px] flex flex-col items-center justify-center text-center px-[50px] py-[100px] md:px-[70px] md:py-[100px]"
+          >
+            <h2 class="h2_mobil text-rod-500 text-center pb-XS">
               engangsservice
             </h2>
-            <p class="p_mobil md:p text-blaa-900 text-center">
+            <p class="p_mobil md:p text-blaa-900 text-center max-w-XL">
               Skeer og bægre er lavet af træ og komposterbart bambuspapir
             </p>
           </div>
           <img
             src="/public/engangsservice.webp"
             alt="billede af engangsservice fra butikken"
+            class="justify-center"
           />
         </div>
-        <div>
-          <div>
-            <h2 class="h2_mobil md:h2 text-rod-500 text-center">
+        <div class="relative">
+          <div
+            class="absolute bg-blaa-100 rounded-[600px] bottom-[160px] md:bottom-[220px] left-[-5px] right-[-5px] md:left-[-25px] flex flex-col items-center justify-center text-center py-[100px] px-[70px]"
+          >
+            <h2 class="h2_mobil text-rod-500 text-center pb-XS">
               økologiske råvarer
             </h2>
-            <p class="p_mobil md:p text-blaa-900 text-center">
+            <p class="p_mobil md:p text-blaa-900 text-center max-w-XL">
               Vi bruger udelukkende økologiske råvarer i vores is
             </p>
           </div>
           <img src="/public/økoråvarer.webp" alt="billede af øko råvarer" />
         </div>
 
-        <div>
-          <div>
-            <h2 class="h2_mobil md:h2 text-rod-500 text-center">
-              følger med sæsonen
-            </h2>
-            <p class="p_mobil md:p text-blaa-900 text-center">
+        <div class="relative">
+          <div
+            class="absolute bg-blaa-100 rounded-[500px] bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center md:left-[-25px] py-[90px] px-[70px]"
+          >
+            <h2 class="h2_mobil text-rod-500 pb-XS">følger med sæsonen</h2>
+            <p class="p_mobil md:p text-blaa-900 max-w-XL">
               Vores smagsvarianter følger sæsonen og skifter efter årstidens
               råvarer
             </p>
@@ -129,5 +134,91 @@ import { Image } from "astro:assets";
         </div>
       </div>
     </div>
+
+    <div class="bg-rod-50 py-L px-M">
+      <div class="flex flex-col md:flex-row items-center pb-M">
+        <img
+          src="/public/anniken.webp"
+          alt="Anniken"
+          class="w-full md:max-w-lg object-cover"
+          id="billede1"
+        />
+      </div>
+
+      <div class="flex flex-col md:flex-row-reverse items-center pb-M">
+        <img
+          src="/public/3isisolen.webp"
+          alt="Is i solen"
+          class="w-full md:max-w-lg object-cover"
+          id="billede2"
+        />
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center pb-M">
+        <img
+          src="/public/børnibutikken.webp"
+          alt="Børn i butikken"
+          class="w-full md:max-w-lg object-cover"
+          id="billede3"
+        />
+      </div>
+
+      <div class="flex flex-col md:flex-row-reverse items-center pb-M">
+        <img
+          src="/public/ispågaden.webp"
+          alt="Is på gaden"
+          class="w-full md:max-w-lg object-cover"
+          id="billede4"
+        />
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center pb-M">
+        <img
+          src="/public/ibutikken.webp"
+          alt="Kunder i butikken"
+          class="w-full md:max-w-lg object-cover"
+          id="billede5"
+        />
+      </div>
+    </div>
   </section>
+
+  <script>
+    import { inView } from "motion";
+
+    // <-- inview billede 1 -->
+    const billede1Fadeup = document.querySelector("#billede1");
+
+    inView(billede1Fadeup, () => {
+      billede1Fadeup.classList.add("animate__animated", "animate__fadeInUpBig");
+    });
+
+    // <-- inview billede 2 -->
+    const billede2Fadeup = document.querySelector("#billede2");
+
+    inView(billede2Fadeup, () => {
+      billede2Fadeup.classList.add("animate__animated", "animate__fadeInUpBig");
+    });
+
+    // <-- inview billede 3 -->
+    const billede3Fadeup = document.querySelector("#billede3");
+
+    inView(billede3Fadeup, () => {
+      billede3Fadeup.classList.add("animate__animated", "animate__fadeInUpBig");
+    });
+
+    // <-- inview billede 4 -->
+    const billede4Fadeup = document.querySelector("#billede4");
+
+    inView(billede4Fadeup, () => {
+      billede4Fadeup.classList.add("animate__animated", "animate__fadeInUpBig");
+    });
+
+    // <-- inview billede 5 -->
+    const billede5Fadeup = document.querySelector("#billede5");
+
+    inView(billede5Fadeup, () => {
+      billede5Fadeup.classList.add("animate__animated", "animate__fadeInUpBig");
+    });
+  </script>
 </MainLayout>
