@@ -84,17 +84,17 @@ minfont: ['Rothenburg-Bold', 'sans-serif'],
 
         /* Tilføj dit typografiske hierarki herunder */
         fontSize: {
-            p_desk: ['20px', { lineHeight: '1.25rem' }],
+            p_desk: ['20px', { lineHeight: '1.75rem' }],
             pstor_desk: ['26px', { lineHeight: '2rem' }],
             h3_desk: ['32px', { lineHeight: '3rem' }],
             h2_desk: ['48px', { lineHeight: '3.75rem' }],
             h1_desk: ['65px', { lineHeight: '4.5rem' },],
             
             p_mobil: ['12px', { lineHeight: '1.25rem' }],
-            pstor_mobil: ['15px', { lineHeight: '1.25rem' }],
-            h3_mobil: ['20px', { lineHeight: '3rem' }],
+            pstor_mobil: ['15px', { lineHeight: '1.5rem' }],
+            h3_mobil: ['20px', { lineHeight: '2rem' }],
             h2_mobil: ['24px', { lineHeight: '' }],
-            h1_mobil: ['36px', { lineHeight: '4.5rem' }],
+            h1_mobil: ['36px', { lineHeight: '3rem' }],
              },
 
         /* Tilføj dit fontvægt-hierarki nedenfor */
