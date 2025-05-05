@@ -2,23 +2,42 @@
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import logo from "../assets/images/logo.png";
+
+// modtag page som prop
+const { page } = Astro.props;
+
+// Vælg baggrundsfarve baseret på siden
+const backgroundColor =
+  page === "index"
+    ? "bg-blaa-100"
+    : page === "event"
+      ? "bg-gron-200"
+      : page === "is"
+        ? "bg-rod-50"
+        : page === "omos"
+          ? "bg-gul-400"
+          : page === "kontakt"
+            ? "bg-blaa-100"
+            : "bg-slate-200";
 ---
 
-<div x-data="{ showmenu: false }" class="p-4 lg:static w-full bg-slate-200">
+<div
+  x-data="{ showmenu: false }"
+  class={`p-4 lg:static w-full ${backgroundColor}`}
+>
   <div id="navbar" class="flex flex-row justify-between">
-    <div id="logo" class="">
+    <div id="logo">
       <a href="/"> <Image src={logo} alt="Logo " class="h-[100px] w-auto" /></a>
     </div>
     <nav id="desktopmenu" class="hidden lg:block">
       <ul class="flex flex-row gap-M items-center">
-        <li class=""><Link href="/event">EVENTS OG CATERING</Link></li>
-        <li class=""><Link href="/is">VORES IS</Link></li>
-        <li class=""><Link href="/omos">OM OS</Link></li>
-
-        <li class=""><Link href="/kontakt">KONTAKT</Link></li>
+        <li><Link href="/event">EVENTS OG CATERING</Link></li>
+        <li><Link href="/is">VORES IS</Link></li>
+        <li><Link href="/omos">OM OS</Link></li>
+        <li><Link href="/kontakt">KONTAKT</Link></li>
       </ul>
     </nav>
-    <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu"
+    <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = !showmenu"
       >Menu</button
     >
   </div>
@@ -31,14 +50,10 @@ import logo from "../assets/images/logo.png";
     x-on:click.outside="showmenu = false"
   >
     <ul class="font-worksans text-center p-M">
-      <li class="">
-        <Link href="/event">EVENTS OG CATERING</Link>
-      </li>
-      <li class="">
-        <Link href="/is">VORES IS</Link>
-      </li>
-      <li class=""><Link href="/omos">OM OS</Link></li>
-      <li class=""><Link href="/kontakt">KONTAKT</Link></li>
+      <li><Link href="/event">EVENTS OG CATERING</Link></li>
+      <li><Link href="/is">VORES IS</Link></li>
+      <li><Link href="/omos">OM OS</Link></li>
+      <li><Link href="/kontakt">KONTAKT</Link></li>
     </ul>
   </nav>
 </div>
