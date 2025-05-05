@@ -4,3 +4,37 @@ import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 ---
+
+<MainLayout title="kontakt">
+  <article class="bg-blaa-100 py-L text-center">
+    <h1 class="h1_mobil text-blaa-600">Kontakt os</h1>
+
+    <section>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-M">
+        <div class="md:flex flex-row gap-10">
+          <h2 class="h2_mobil text-gron-800 font-bold">ADRESSE</h2>
+          <p class="pstor_mobil">NØRREBRO</p>
+          <p class="pstor_mobil">JÆGERSBORGSGADE 13</p>
+          <p class="pstor_mobil">2200 NØRREBRO</p>
+          <p class="pstor_mobil">KØBENHAVN</p>
+        </div>
+
+        <div class="md:flex flex-row gap-10">
+          <h2 class="h2_mobil text-gron-800 font-bold">KONTAKT</h2>
+          <p class="pstor_mobil">TELEFON:</p>
+          <p class="pstor_mobil">+45 61311834</p>
+          <p class="pstor_mobil">EMAIL:</p>
+          <p class="pstor_mobil">INFO@ISTID.DK</p>
+        </div>
+
+        <div class="md:flex flex-row gap-10">
+          <h2 class="h2_mobil text-gron-800 font-bold">ÅBNINGSTIDER</h2>
+          <p class="pstor_mobil">MARTS - APRIL: 12-18</p>
+          <p class="pstor_mobil">MAJ - AUGUST: 12-21</p>
+          <p class="pstor_mobil">SEPTEMBER: 12-19</p>
+          <p class="pstor_mobil">LUKKET FRA DEN 25. SEPTEMBER</p>
+        </div>
+      </div>
+    </section>
+  </article>
+</MainLayout>
