@@ -1,6 +1,56 @@
 ---
+import { Image } from "astro:assets";
+import logo from "../assets/images/logo.png";
 ---
-<div>
-    <p class="max-w-screen-xl mx-auto text-white">Footer - tilføj footerindhold</p>
-</div>
-      
+
+<section class="grid grid-cols-1 md:grid-cols-4 bg-gul-400 px-M gap-M py-M">
+  <div>
+    <a href="/">
+      <Image src={logo} alt="Logo" class="h-[100px] md:h-[150px] w-auto" /></a
+    >
+  </div>
+
+  <div class="gap-10">
+    <h2 class="h3_mobil md:h3 text-gron-800 font-bold pb-XS">Adresse</h2>
+    <p class="pstor_mobil md:text-pstor_desk">Nørrebro</p>
+    <p class="pstor_mobil md:text-pstor_desk">Jægersborgsgade 13</p>
+    <p class="pstor_mobil md:text-pstor_desk">2200 Nørrebro</p>
+    <p class="pstor_mobil md:text-pstor_desk">København</p>
+  </div>
+
+  <div class="gap-10">
+    <h2 class="h3_mobil md:h3 text-gron-800 font-bold pb-XS">Kontakt</h2>
+    <p class="pstor_mobil md:text-pstor_desk">Telefon:</p>
+    <p class="pstor_mobil md:text-pstor_desk">+45 61311834</p>
+    <p class="pstor_mobil md:text-pstor_desk">Email:</p>
+    <p class="pstor_mobil md:text-pstor_desk">Info@istid.dk</p>
+    <div class="flex flex-row gap-XS pt-S">
+      <div>
+        <a
+          href="https://www.instagram.com/istidkbh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          ><img src="/public/instagram.svg" alt="instagram logo" /></a
+        >
+      </div>
+      <div>
+        <a href="https://www.facebook.com/istidkbh"
+          ><img src="/public/facebook.svg" alt="facebook logo" /></a
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="gap-10">
+    <h2 class="h3_mobil md:h3 text-gron-800 font-bold pb-XS">Åbningstider</h2>
+    <p class="pstor_mobil md:text-pstor_desk">Marts - April: 12-18</p>
+    <p class="pstor_mobil md:text-pstor_desk">Maj - August: 12-21</p>
+    <p class="pstor_mobil md:text-pstor_desk">September: 12-19</p>
+    <p class="pstor_mobil md:text-pstor_desk">
+      Lukket fra <br />D. 25. September
+    </p>
+
+    <div class="flex flex-row gap-S py-XS md:py-M">
+      <img src="/public/økologi.svg" alt="økologimærket" />
+      <img src="/public/fødevarekontrol.svg" alt="fødevarekontrol mærket" />
+    </div>
+  </div>
+</section>
