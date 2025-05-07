@@ -3,14 +3,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import Header from "../components/Header.astro";
 ---
 
-<Header page="omos" />
-
-<MainLayout title="omos">
+<MainLayout title="omos" page="omos">
   <section>
-    <div class="bg-gul-400 text-center py-L px-M">
+    <div class="bg-gul-400 text-center py-M md:py-L px-M">
       <h1 class="h1_mobil md:h1 text-rod-500">Hvem er istid</h1>
       <p class="pstor_mobil md:pstor text-blaa-900">
         Hos ISTID elsker vi at trylle med flydende nitrogen og økologiske
@@ -19,11 +16,15 @@ import Header from "../components/Header.astro";
       </p>
     </div>
 
-    <div class="bg-blaa-100 py-M px-M md:m-M">
-      <h2 class="h2_mobil md:h2 text-blaa-600 text-center md:text-left pb-XS">
+    <div class="bg-blaa-100 py-M px-M md:m-L md:relavtive">
+      <h2
+        class="h2_mobil md:h2 text-blaa-600 text-center md:text-left pb-XS md:pt-M"
+      >
         Historien
       </h2>
-      <p class="p_mobil md:p text-blaa-900 text-center md:text-left">
+      <p
+        class="p_mobil md:p text-blaa-900 text-center md:text-left pb-M md:max-w-[850px]"
+      >
         Istid blev grundlagt i 2014 af Anniken og Nina, drevet af ønsket om at
         skabe en anderledes isoplevelse. Inspireret af flydende nitrogen-is, som
         Anniken først oplevede på en rejse til San Francisco i 2012, besluttede
@@ -33,14 +34,22 @@ import Header from "../components/Header.astro";
         en lokal og unik isoplevelse. Istid er ikke kun en butik, men også en
         cateringservice, der tilbyder is til virksomheder og events.
       </p>
-      <img src="" alt="" />
+      <img
+        src="/public/historie.webp"
+        alt="billede af anniken og veninde"
+        class="w-1/2 mx-auto mt-4 md:w-1/3 md:absolute top-[690px] left-[1050px]"
+      />
     </div>
 
-    <div class="bg-rod-50 py-M px-M md:m-M">
-      <h2 class="h2_mobil md:h2 text-blaa-600 text-center md:text-right">
+    <div class="bg-rod-50 py-M px-M md:m-L md:my-XL md:relative">
+      <h2
+        class="h2_mobil md:h2 text-blaa-600 text-center md:text-right md:pt-M"
+      >
         Hvad der gør os unikke
       </h2>
-      <p class="p_mobil md:p text-blaa-900 text-center md:text-right">
+      <p
+        class="p_mobil md:p text-blaa-900 text-center md:text-right pb-M md:max-w-[850px] md:ml-auto"
+      >
         Vi er de eneste i Danmark, der fryser vores is med flydende nitrogen –
         direkte foran dig. Det betyder, at vi kan lave frisk is på få sekunder,
         hvilket giver en helt særlig, cremet konsistens, du ikke finder andre
@@ -49,7 +58,11 @@ import Header from "../components/Header.astro";
         det om rene ingredienser, ægte smagsoplevelser og en is, der både føles
         lettere og smager friskere.
       </p>
-      <img src="" alt="" />
+      <img
+        src="/public/unikke.webp"
+        alt="billede af event"
+        class="w-1/2 mx-auto mt-4 md:w-1/3 md:absolute top-[100px] left-[-50px]"
+      />
     </div>
 
     <div class="bg-gron-300 grid md:grid-cols-2">

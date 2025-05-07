@@ -8,17 +8,13 @@ const { page } = Astro.props;
 
 // Vælg baggrundsfarve baseret på siden
 const backgroundColor =
-  page === "index"
-    ? "bg-blaa-100"
-    : page === "event"
-      ? "bg-gron-200"
-      : page === "is"
-        ? "bg-rod-50"
-        : page === "omos"
-          ? "bg-gul-400"
-          : page === "kontakt"
-            ? "bg-blaa-100"
-            : "bg-slate-200";
+  {
+    index: "bg-blaa-50",
+    event: "bg-gron-200",
+    is: "bg-rod-50",
+    omos: "bg-gul-400",
+    kontakt: "bg-blaa-100",
+  }[page] || "bg-slate-200"; // Standardfarve hvis page ikke matcher
 ---
 
 <div
@@ -30,26 +26,30 @@ const backgroundColor =
       <a href="/"> <Image src={logo} alt="Logo " class="h-[100px] w-auto" /></a>
     </div>
     <nav id="desktopmenu" class="hidden lg:block">
-      <ul class="flex flex-row gap-M items-center">
+      <ul class="flex flex-row gap-M items-center p-S">
         <li><Link href="/event">EVENTS OG CATERING</Link></li>
         <li><Link href="/is">VORES IS</Link></li>
         <li><Link href="/omos">OM OS</Link></li>
         <li><Link href="/kontakt">KONTAKT</Link></li>
       </ul>
     </nav>
-    <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = !showmenu"
-      >Menu</button
+    <button
+      id="burgermenu"
+      class="lg:hidden pr-S"
+      x-on:click="showmenu = !showmenu"
     >
+      Menu
+    </button>
   </div>
   <nav
     id="mobilmenu"
-    class="flex flex-col content-center pt-4"
+    class="flex flex-col content-center"
     x-show="showmenu"
     x-transition
     x-on:click="showmenu = false"
     x-on:click.outside="showmenu = false"
   >
-    <ul class="font-worksans text-center p-M">
+    <ul class="font-worksans text-center p-4">
       <li><Link href="/event">EVENTS OG CATERING</Link></li>
       <li><Link href="/is">VORES IS</Link></li>
       <li><Link href="/omos">OM OS</Link></li>
