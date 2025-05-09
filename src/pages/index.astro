@@ -30,7 +30,7 @@ import "animate.css";
         <p class="pstor_mobil md:pstor text-blaa-600 pb-XXS">
           Håndlavet økologisk nitrogen is <br /> til hverdag og events
         </p>
-        <Button>Book os nu</Button>
+        <a href="event"><Button>Book os nu</Button></a>
       </div>
 
       <!-- Grafik og billeder-wrapper -->
@@ -425,11 +425,12 @@ import "animate.css";
           catering i dag
         </p>
         <div class="md:pt-XS">
-          <Button_S_Rod>BOOK NU</Button_S_Rod>
+          <a href="event"><Button_S_Rod>BOOK NU</Button_S_Rod></a>
         </div>
       </div>
       <div class="pt-S">
         <svg
+          id="bil"
           width="427.5"
           height="184.5"
           viewBox="0 0 475 205"
@@ -687,7 +688,7 @@ import "animate.css";
           Kom forbi vores butik og se hvad sæsonen bringer af gode varianter.
         </p>
         <div class="md:pt-XS">
-          <Button_S_Gul>Se vores smage her</Button_S_Gul>
+          <a href="is"><Button_S_Gul>Se vores smage her</Button_S_Gul></a>
         </div>
       </div>
       <div>
@@ -699,23 +700,44 @@ import "animate.css";
         />
       </div>
     </section>
-    <section class="bg-rod-50 p-M md:py-XL relative">
-      <div>
-        <h2 class="h2_mobil md:h2 text-rod-500 pb-XS">Nyhedsbrev tilmelding</h2>
-        <p class="text-rod-900 pstor_mobil md:pstor pb-XS md:w-[1200px]">
-          Tilfmeld dig vores nyhedsbrev og vær den første til at høre om
-          sæsonens is, nye smagsvarianter og åbninbgstider
-        </p>
-      </div>
-      <div class="absolute z-[-1]">
-        <svg
-          width="448"
-          height="532"
-          viewBox="0 0 448 532"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g clip-path="url(#clip0_668_379)">
+    <section class="bg-rod-50 p-M md:py-XL">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div>
+          <div>
+            <h2 class="h2_mobil md:h2 text-rod-500 pb-XS">
+              Nyhedsbrev tilmelding
+            </h2>
+            <p class="text-rod-900 pstor_mobil md:pstor pb-XS md:w-[800px]">
+              Tilfmeld dig vores nyhedsbrev og vær den første til at høre om
+              sæsonens is, nye smagsvarianter og åbninbgstider
+            </p>
+          </div>
+          <div class="md:pt-XS">
+            <form class="flex gap-S">
+              <input
+                type="email"
+                placeholder="Din e-mail"
+                class="border border-rod-500 rounded-medium bg-transparent p-XXS text-rod-600 placeholder-rod-600 uppercase bg-none w-[250px] md:w-[500px]"
+                required
+              />
+              <button
+                type="submit"
+                class="border border-rod-500 text-rod-600 p-XXS rounded-medium"
+              >
+                TILMELD NU
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="grid justify-center pt-M md:pt-XXXS">
+          <svg
+            width="348"
+            height="300"
+            viewBox="0 0 448 532"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               d="M17.8141 266.53C29.2365 336.247 41.1449 408.399 52.5916 478.092C58.0597 485.731 67.0761 496.358 80.8802 505.299C94.3926 514.047 107.711 518.047 131.455 522.312C155.879 526.698 177.897 530.626 211.192 530.819C254.111 531.036 283.615 524.843 315.792 518.071C346.511 511.613 364.957 505.323 379.223 489.177C385.785 481.755 389.673 474.284 391.958 468.934C392.225 462.452 392.565 455.897 392.954 449.318C397.037 383.312 407.852 321.74 422.798 264.964"
               stroke="#DD3032"
@@ -781,29 +803,8 @@ import "animate.css";
               stroke="#DD3032"
               stroke-width="2"
               stroke-miterlimit="10"></path>
-          </g>
-          <defs>
-            <clipPath id="clip0_668_379">
-              <rect width="448" height="532" fill="white"></rect>
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
-      <div class="md:pt-XS">
-        <form class="flex gap-S">
-          <input
-            type="email"
-            placeholder="Din e-mail"
-            class="border border-rod-500 rounded-medium bg-transparent p-XXS text-rod-600 placeholder-rod-600 uppercase bg-none w-[250px] md:w-[500px]"
-            required
-          />
-          <button
-            type="submit"
-            class="border border-rod-500 text-rod-600 p-XXS rounded-medium"
-          >
-            TILMELD NU
-          </button>
-        </form>
+          </svg>
+        </div>
       </div>
     </section>
   </article>
@@ -813,4 +814,19 @@ import "animate.css";
       animation: tada 1s;
     }
   </style>
+
+  <script>
+    import { inView } from "motion";
+
+    // <-- inview bil -->
+    const bilFadein = document.querySelector("#bil");
+
+    inView(bilFadein, () => {
+      bilFadein.classList.add(
+        "animate__animated",
+        "animate__fadeInRight",
+        "animate__delay-0.75s"
+      );
+    });
+  </script>
 </MainLayout>
