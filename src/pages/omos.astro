@@ -3,9 +3,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
+import historie from "/public/historie.webp";
+import unikke from "/public/unikke.webp";
 ---
 
-<MainLayout title="omos" page="omos">
+<MainLayout title="OM OS" page="omos">
   <section>
     <div class="bg-gul-400 text-center py-M md:py-L px-M">
       <h1 class="h1_mobil md:h1 text-rod-500">Hvem er istid</h1>
@@ -34,10 +36,10 @@ import { Image } from "astro:assets";
         en lokal og unik isoplevelse. Istid er ikke kun en butik, men også en
         cateringservice, der tilbyder is til virksomheder og events.
       </p>
-      <img
-        src="/public/historie.webp"
+      <Image
+        src={historie}
         alt="billede af anniken og veninde"
-        class="w-1/2 mx-auto mt-4 md:w-1/3 md:absolute top-[690px] left-[1050px]"
+        class="w-[300px] mx-auto mt-4 md:w-1/3 md:absolute top-[690px] left-[1050px]"
       />
     </div>
 
@@ -53,15 +55,15 @@ import { Image } from "astro:assets";
         Vi er de eneste i Danmark, der fryser vores is med flydende nitrogen –
         direkte foran dig. Det betyder, at vi kan lave frisk is på få sekunder,
         hvilket giver en helt særlig, cremet konsistens, du ikke finder andre
-        steder.  Samtidig bruger vi økologiske råvarer og mindre sukker end
+        steder. Samtidig bruger vi økologiske råvarer og mindre sukker end
         traditionel is, uden at gå på kompromis med smagen. Hos ISTID handler
         det om rene ingredienser, ægte smagsoplevelser og en is, der både føles
         lettere og smager friskere.
       </p>
-      <img
-        src="/public/unikke.webp"
+      <Image
+        src={unikke}
         alt="billede af event"
-        class="w-1/2 mx-auto mt-4 md:w-1/3 md:absolute top-[100px] left-[-50px]"
+        class="w-[300px] mx-auto mt-4 md:w-1/3 md:absolute top-[100px] left-[-50px]"
       />
     </div>
 
