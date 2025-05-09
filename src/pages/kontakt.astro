@@ -7,24 +7,32 @@ import { Image } from "astro:assets";
 
 <MainLayout title="KONTAKT" page="kontakt">
   <article class="bg-blaa-100 py-M md:py-L">
-    <h1 class="h1_mobil md:h1 text-blaa-600 pb-S md:pb-L text-center">
+    <h1 class="h1_mobil md:h1 text-blaa-600 pb-L md:pb-XL text-center">
       Kontakt os
     </h1>
 
     <section class="px-M">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-M">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-M">
         <div class="gap-10">
           <h2 class="h2_mobil md:h2 text-gron-800 font-bold pb-XS">Adresse</h2>
-          <p class="pstor_mobil md:text-pstor_desk">Nørrebro</p>
-          <p class="pstor_mobil md:text-pstor_desk">Jægersborgsgade 13</p>
-          <p class="pstor_mobil md:text-pstor_desk">2200 Nørrebro</p>
+          <p class="pstor_mobil md:text-pstor_desk pb-XXXS md:pb-XXS">
+            Nørrebro
+          </p>
+          <p class="pstor_mobil md:text-pstor_desk pb-XXXS md:pb-XXS">
+            Jægersborgsgade 13
+          </p>
+          <p class="pstor_mobil md:text-pstor_desk pb-XXXS md:pb-XXS">
+            2200 Nørrebro
+          </p>
           <p class="pstor_mobil md:text-pstor_desk">København</p>
         </div>
 
         <div class="gap-10">
           <h2 class="h2_mobil md:h2 text-gron-800 font-bold pb-XS">Kontakt</h2>
           <p class="pstor_mobil md:text-pstor_desk">Telefon:</p>
-          <p class="pstor_mobil md:text-pstor_desk">+45 61311834</p>
+          <p class="pstor_mobil md:text-pstor_desk pb-XXXS md:pb-XXS">
+            +45 61311834
+          </p>
           <p class="pstor_mobil md:text-pstor_desk">Email:</p>
           <p class="pstor_mobil md:text-pstor_desk">Info@istid.dk</p>
         </div>
@@ -33,26 +41,32 @@ import { Image } from "astro:assets";
           <h2 class="h2_mobil md:h2 text-gron-800 font-bold pb-XS">
             Åbningstider
           </h2>
-          <p class="pstor_mobil md:text-pstor_desk">Marts - April: 12-18</p>
-          <p class="pstor_mobil md:text-pstor_desk">Maj - August: 12-21</p>
-          <p class="pstor_mobil md:text-pstor_desk">September: 12-19</p>
-          <p class="pstor_mobil md:text-pstor_desk">
+          <p class="pstor_mobil md:text-pstor_desk pb-XXXS md:pb-XXS">
+            Marts - April: 12-18
+          </p>
+          <p class="pstor_mobil md:text-pstor_desk pb-XXXS md:pb-XXS">
+            Maj - August: 12-21
+          </p>
+          <p class="pstor_mobil md:text-pstor_desk pb-XXXS md:pb-XXS">
+            September: 12-19
+          </p>
+          <p class="pstor_mobil md:text-pstor_desk pb-XXXS">
             Lukket fra <br />D. 25. September
           </p>
         </div>
+      </div>
 
-        <div class="gap-10">
-          <h2 class="h2_mobil md:h2 text-gron-800 font-bold pb-XS">
-            Find os her
-          </h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17991.80346575429!2d12.541827439364434!3d55.68941486799795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253ad947c30f1%3A0xd1ef3229d55a79d5!2sIstid!5e0!3m2!1sda!2sdk!4v1746435120075!5m2!1sda!2sdk"
-            class="w-full h-[250px] md:w-[600px] md:h-[400px]"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <div class="gap-10 py-M md:py-L">
+        <h2 class="h2_mobil md:h2 text-gron-800 font-bold pb-XS">
+          Find os her
+        </h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17991.80346575429!2d12.541827439364434!3d55.68941486799795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253ad947c30f1%3A0xd1ef3229d55a79d5!2sIstid!5e0!3m2!1sda!2sdk!4v1746435120075!5m2!1sda!2sdk"
+          class="w-full h-[250px] md:w-[600px] md:h-[400px]"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </article>
