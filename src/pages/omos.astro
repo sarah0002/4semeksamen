@@ -5,6 +5,15 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import historie from "/public/historie.webp";
 import unikke from "/public/unikke.webp";
+import spiseis from "/public/spiseis.webp";
+import engangsservice from "/public/engangsservice.webp";
+import økovarer from "/public/økoråvarer.webp";
+import følgersæson from "/public/følgersæson.webp";
+import anniken from "/public/anniken.webp";
+import isisolen from "/public/3isisolen.webp";
+import børnibutikken from "/public/børnibutikken.webp";
+import ispågaden from "/public/ispågaden.webp";
+import ibutikken from "/public/ibutikken.webp";
 ---
 
 <MainLayout title="OM OS" page="omos">
@@ -45,7 +54,7 @@ import unikke from "/public/unikke.webp";
 
     <div class="bg-rod-50 py-M px-M md:m-L md:my-XL md:relative">
       <h2
-        class="h2_mobil md:h2 text-blaa-600 text-center md:text-right md:pt-M"
+        class="h2_mobil md:h2 text-rod-500 text-center md:text-right md:pt-M pb-XS"
       >
         Hvad der gør os unikke
       </h2>
@@ -69,7 +78,7 @@ import unikke from "/public/unikke.webp";
 
     <div class="bg-gron-300 grid md:grid-cols-2">
       <div class="py-M px-M">
-        <h2 class="h2_mobil md:h2 text-gron-800 pb-XS">
+        <h2 class="h2_mobil md:h2 text-gron-800 pb-XS md:pt-L">
           I gør os til dem vi er
         </h2>
         <p class="pb-S p_mobil md:p">
@@ -86,16 +95,20 @@ import unikke from "/public/unikke.webp";
         </p>
       </div>
       <div>
-        <img src="/public/spiseis.webp" alt="Anniken og barn spiser is" />
+        <Image
+          src={spiseis}
+          alt="Anniken og barn spiser is"
+          class="w-full max-w-md md:max-w-full mx-auto md:h-[700px] object-cover pb-M"
+        />
       </div>
     </div>
 
     <div class="bg-gul-400 px-M py-L">
       <div class="flex flex-col items-center justify-center text-center">
-        <h2 class="h2_mobil md:h2 text-rod-500 pb-XS">
+        <h2 class="h2_mobil md:h2 text-blaa-600 pb-XS">
           Vores bæredygtige tiltag
         </h2>
-        <p class="p_mobil md:p text-blaa-900 max-w-3xl pb-M md:pb-XL">
+        <p class="p_mobil md:p text-blaa-900 max-w-3xl pb-L md:pb-XL">
           Hos ISTID er vi i evig søgen efter den bedste og mest bæredygtige
           emballage, men det er ikke altid at det er muligt, at finde emballage,
           der både lever op til vores krav om bæredygtighed og vores høje
@@ -106,7 +119,7 @@ import unikke from "/public/unikke.webp";
       <div class="grid md:grid-cols-3 pt-L gap-XL justify-center">
         <div class="relative">
           <div
-            class="bg-blaa-100 rounded-[600px] absolute bottom-[160px] md:bottom-[220px] left-[-5px] md:left-[-25px] flex flex-col items-center justify-center text-center px-[50px] py-[100px] md:px-[70px] md:py-[100px]"
+            class="bg-blaa-100 rounded-[600px] absolute bottom-[160px] md:bottom-[220px] left-[-5px] md:left-[-25px] flex flex-col items-center justify-center text-center px-[50px] py-[115px] md:px-[70px] md:py-[100px]"
           >
             <h2 class="h2_mobil text-rod-500 text-center pb-XS">
               engangsservice
@@ -115,8 +128,9 @@ import unikke from "/public/unikke.webp";
               Skeer og bægre er lavet af træ og komposterbart bambuspapir
             </p>
           </div>
-          <img
-            src="/public/engangsservice.webp"
+
+          <Image
+            src={engangsservice}
             alt="billede af engangsservice fra butikken"
             class="justify-center"
           />
@@ -132,7 +146,12 @@ import unikke from "/public/unikke.webp";
               Vi bruger udelukkende økologiske råvarer i vores is
             </p>
           </div>
-          <img src="/public/økoråvarer.webp" alt="billede af øko råvarer" />
+
+          <Image
+            src={økovarer}
+            alt="billede af øko råvarer"
+            class="justify-center"
+          />
         </div>
 
         <div class="relative">
@@ -145,9 +164,11 @@ import unikke from "/public/unikke.webp";
               råvarer
             </p>
           </div>
-          <img
-            src="/public/følgersæson.webp"
+
+          <Image
+            src={følgersæson}
             alt="billede af forskellige isvarianter"
+            class="justify-center"
           />
         </div>
       </div>
@@ -155,8 +176,8 @@ import unikke from "/public/unikke.webp";
 
     <div class="bg-rod-50 py-L px-M">
       <div class="flex flex-col md:flex-row items-center pb-M">
-        <img
-          src="/public/anniken.webp"
+        <Image
+          src={anniken}
           alt="Anniken"
           class="w-full md:max-w-lg object-cover"
           id="billede1"
@@ -164,8 +185,8 @@ import unikke from "/public/unikke.webp";
       </div>
 
       <div class="flex flex-col md:flex-row-reverse items-center pb-M">
-        <img
-          src="/public/3isisolen.webp"
+        <Image
+          src={isisolen}
           alt="Is i solen"
           class="w-full md:max-w-lg object-cover"
           id="billede2"
@@ -173,8 +194,8 @@ import unikke from "/public/unikke.webp";
       </div>
 
       <div class="flex flex-col md:flex-row items-center pb-M">
-        <img
-          src="/public/børnibutikken.webp"
+        <Image
+          src={børnibutikken}
           alt="Børn i butikken"
           class="w-full md:max-w-lg object-cover"
           id="billede3"
@@ -182,17 +203,17 @@ import unikke from "/public/unikke.webp";
       </div>
 
       <div class="flex flex-col md:flex-row-reverse items-center pb-M">
-        <img
-          src="/public/ispågaden.webp"
-          alt="Is på gaden"
+        <Image
+          src={ispågaden}
+          alt="Is på gadenn"
           class="w-full md:max-w-lg object-cover"
           id="billede4"
         />
       </div>
 
       <div class="flex flex-col md:flex-row items-center pb-M">
-        <img
-          src="/public/ibutikken.webp"
+        <Image
+          src={ibutikken}
           alt="Kunder i butikken"
           class="w-full md:max-w-lg object-cover"
           id="billede5"
