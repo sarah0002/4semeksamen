@@ -17,10 +17,10 @@ import ibutikken from "/public/ibutikken.webp";
 import ispersoner from "../assets/images/istid_personer.webp";
 ---
 
-<MainLayout title="omos" page="omos">
+<MainLayout title="OM OS" page="omos">
   <section>
     <div class="bg-gul-400 text-center py-M md:py-L px-M">
-      <h1 class="h1_mobil md:h1 text-rod-500">Hvem er istid</h1>
+      <h1 class="h1_mobil md:h1 text-gul-700">Hvem er istid</h1>
       <p class="pstor_mobil md:pstor text-blaa-900">
         Hos ISTID elsker vi at trylle med flydende nitrogen og økologiske
         råvarer, og invitere dig med på en smagsrejse, hvor videnskab møder
@@ -102,7 +102,7 @@ import ispersoner from "../assets/images/istid_personer.webp";
         <Image
           src={spiseis}
           alt="Anniken og barn spiser is"
-          class="w-full max-w-md md:max-w-full mx-auto md:h-[700px] object-cover pb-M"
+          class="w-full max-w-md md:max-w-full mx-auto md:h-[800px] object-cover"
         />
       </div>
     </div>
@@ -120,10 +120,10 @@ import ispersoner from "../assets/images/istid_personer.webp";
         </p>
       </div>
 
-      <div class="grid md:grid-cols-3 pt-L gap-XL justify-center">
+      <div class="grid md:grid-cols-3 pt-L gap-[250px] md:gap-0 justify-center">
         <div class="relative flex flex-col items-center">
           <div
-            class="bg-blaa-100 rounded-[600px] absolute bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center px-[50px] py-[115px] md:px-[70px] md:py-[100px]"
+            class="bg-blaa-100 rounded-[600px] absolute bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center px-[50px] py-[100px] md:px-[70px] md:py-[100px]"
           >
             <h2 class="h2_mobil text-rod-500 text-center pb-XS">
               engangsservice
@@ -160,7 +160,7 @@ import ispersoner from "../assets/images/istid_personer.webp";
 
         <div class="relative flex flex-col items-center">
           <div
-            class="absolute bg-blaa-100 rounded-[500px] bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center py-[90px] px-[80px] md:py-[85px] md:px-[70px] md:left-[-8px] md:right-[-8px]"
+            class="absolute bg-blaa-100 rounded-[500px] bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center py-[90px] px-[80px] md:py-[75px] md:px-[70px] md:left-[-8px] md:right-[-8px]"
           >
             <h2 class="h2_mobil text-rod-500 pb-XS">følger med sæsonen</h2>
             <p class="p_mobil md:p text-blaa-900 max-w-XL">
@@ -178,8 +178,8 @@ import ispersoner from "../assets/images/istid_personer.webp";
       </div>
     </div>
 
-    <div class="bg-rod-50 py-L px-M">
-      <div class="flex flex-col md:flex-row items-center pb-M">
+    <div class="bg-rod-50 pt-L px-M md:-mb-[450px]">
+      <div class="flex flex-col md:flex-row items-center">
         <Image
           src={anniken}
           alt="Anniken"
@@ -188,38 +188,38 @@ import ispersoner from "../assets/images/istid_personer.webp";
         />
       </div>
 
-      <div class="flex flex-col md:flex-row-reverse items-center pb-M">
+      <div class="flex flex-col md:flex-row-reverse items-center">
         <Image
           src={isisolen}
           alt="Is i solen"
-          class="w-full md:max-w-lg object-cover"
+          class="w-full md:max-w-lg object-cover relative md:top-[-225px] left-[-100px]"
           id="billede2"
         />
       </div>
 
-      <div class="flex flex-col md:flex-row items-center pb-M">
+      <div class="flex flex-col md:flex-row items-center">
         <Image
           src={børnibutikken}
           alt="Børn i butikken"
-          class="w-full md:max-w-lg object-cover"
+          class="w-full md:max-w-lg object-cover relative md:top-[-275px] right-[-100px]"
           id="billede3"
         />
       </div>
 
-      <div class="flex flex-col md:flex-row-reverse items-center pb-M">
+      <div class="flex flex-col md:flex-row-reverse items-center">
         <Image
           src={ispågaden}
           alt="Is på gadenn"
-          class="w-full md:max-w-lg object-cover"
+          class="w-full md:max-w-lg object-cover relative md:top-[-425px]"
           id="billede4"
         />
       </div>
 
-      <div class="flex flex-col md:flex-row items-center pb-M">
+      <div class="flex flex-col md:flex-row items-center">
         <Image
           src={ibutikken}
           alt="Kunder i butikken"
-          class="w-full md:max-w-lg object-cover"
+          class="w-full md:max-w-lg object-cover relative md:top-[-625px] right-[-240px]"
           id="billede5"
         />
       </div>
