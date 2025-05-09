@@ -36,9 +36,9 @@
 }
 
 .pstor_mobil {
-  @apply font-worksans uppercase text-pstor_mobil;
+  @apply font-worksans  text-pstor_mobil;
 }
 
 .p_mobil {
-    @apply font-worksans text-p_mobil;
-  }
+  @apply font-worksans text-p_mobil;
+}
