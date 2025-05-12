@@ -7,6 +7,7 @@ import popup from "../assets/images/popup.webp";
 import brandbil from "../assets/images/brandbil.webp";
 import workshop from "../assets/images/workshop.webp";
 import Button from "../components/Button.astro";
+import "motion";
 ---
 
 <MainLayout title="EVENTS OG CATERING" page="event">
@@ -1385,7 +1386,10 @@ import Button from "../components/Button.astro";
         >
       </section>
     </section>
-    <section id="popup" class="bg-rod-50 p-M md:p-L md:grid md:grid-cols-2">
+    <section
+      id="popup"
+      class="popup bg-rod-50 p-M md:p-L md:grid md:grid-cols-2"
+    >
       <div class="order-1 md:order-2 md:self-center">
         <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
           pop up is-stand
@@ -1394,11 +1398,12 @@ import Button from "../components/Button.astro";
           Et populært valg til konferencer og messer – eller som en ekstra
           forkælelse til medarbejderne i kantinen. Pop-up-formatet giver
           uendelige muligheder. Vi kan servere for alt fra 100 til 2000 gæster
-          eller flere – og det endda på ganske kort tid. <br /> Vi kan tilbyde få
-          eller mange forskellige smagsvarianter, lave ekstravagante iscocktails
-          eller blot servere en enkelt klassisk isvariant fra jeres stand på en konference
-          for at tiltrække og invitere potentielle kunder til en snak om jeres service
-          eller produkt. Alt, vi behøver, er et bord og adgang til strøm.
+          eller flere – og det endda på ganske kort tid. <br /> Vi kan tilbyde
+          få eller mange forskellige smagsvarianter, lave ekstravagante
+          iscocktails eller blot servere en enkelt klassisk isvariant fra jeres
+          stand på en konference for at tiltrække og invitere potentielle kunder
+          til en snak om jeres service eller produkt. Alt, vi behøver, er et
+          bord og adgang til strøm.
         </p>
       </div>
       <div class="order-2 md:order-1 md:justify-self-start">
@@ -1410,34 +1415,12 @@ import Button from "../components/Button.astro";
         />
       </div>
     </section>
-    <section id="team" class="bg-gul-100 p-M md:p-L md:grid md:grid-cols-2">
+    <section id="bil" class="bg-gron-200 p-M md:p-L md:grid md:grid-cols-2">
       <section class="md:self-center">
         <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-start">
-          TEAMBUILDING wORKSHOP
-        </h2>
-        <p class="pstor_mobil md:p text-blaa-900 text-center md:text-start">
-          Som et nyt tilbud afholder vi sjove og kreative is-workshops, hvor
-          deltagerne i par får lov til selv at fryse deres egen is ved hjælp af
-          flydende nitrogen og almindeligt køkkenudstyr. Øvelsen er en sjov og
-          enkel måde at ryste sammen på eller lære hinanden at kende på en
-          anderledes måde.
-        </p>
-      </section>
-      <section class="md:justify-self-end">
-        <Image
-          src={workshop}
-          alt="Billede af et isevent."
-          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover mx-auto mt-S"
-          loading="lazy"
-        />
-      </section>
-    </section>
-    <section id="bil" class="bg-blaa-50 p-M md:p-L md:grid md:grid-cols-2">
-      <section class="order-1 md:order-2 md:self-center">
-        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
           is brandbil
         </h2>
-        <p class="p_mobil text-blaa-900 text-center md:p md:text-end">
+        <p class="p_mobil text-gron-900 text-center md:p md:text-start">
           Perfekt til udendørs sommerfester, musikfestivaler, bryllupper eller
           det store kundeevent i virksomheden... ISTIDs retro brandbil er en 50
           år gammel dame, der kan få alle til at smile. Med sit skinnende røde
@@ -1447,15 +1430,38 @@ import Button from "../components/Button.astro";
           til arrangementer på Sjælland.)
         </p>
       </section>
-      <section class="order-2 md:order-1 md:justify-self-start">
+      <section class="md:justify-self-end">
         <Image
           src={brandbil}
+          alt="Billede af et isevent."
+          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover mx-auto mt-S object-center sm:object-[center]"
+          loading="lazy"
+        />
+      </section>
+    </section>
+    <section id="team" class="bg-blaa-50 md:p-L p-M md:grid md:grid-cols-2">
+      <section class="order-1 md:order-2 md:self-center">
+        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
+          TEAMBUILDING wORKSHOP
+        </h2>
+        <p class="pstor_mobil md:p text-blaa-900 text-center md:text-end">
+          Som et nyt tilbud afholder vi sjove og kreative is-workshops, hvor
+          deltagerne i par får lov til selv at fryse deres egen is ved hjælp af
+          flydende nitrogen og almindeligt køkkenudstyr. Øvelsen er en sjov og
+          enkel måde at ryste sammen på eller lære hinanden at kende på en
+          anderledes måde.
+        </p>
+      </section>
+      <section class="md:justify-self-start">
+        <Image
+          src={workshop}
           alt="Billede af et isevent."
           class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover mx-auto mt-S"
           loading="lazy"
         />
       </section>
     </section>
+
     <section class="bg-gul-100 p-M pt-L pb-L md:p-L">
       <div class="pb-S">
         <h2 class="h2_mobil md:h2 text-rod-500 text-center">
@@ -1598,5 +1604,19 @@ import Button from "../components/Button.astro";
     });
 
     button.classList.add("bg-blaa-500", "text-gul-50", "border-blue-500");
+
+    import { inView } from "motion";
+
+    // <-- inview facts -->
+    const popupFadeup = document.querySelector(".popup");
+
+    inView(popupFadeup, () => {
+      popupFadeup.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig",
+        "animate__delay-0.5s",
+        "animate__slow"
+      );
+    });
   </script>
 </MainLayout>
