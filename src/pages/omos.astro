@@ -15,6 +15,10 @@ import børnibutikken from "/public/børnibutikken.webp";
 import ispågaden from "/public/ispågaden.webp";
 import ibutikken from "/public/ibutikken.webp";
 import ispersoner from "../assets/images/istid_personer.webp";
+import gallery1 from "../assets/images/gallery1.webp";
+import gallery2 from "../assets/images/gallery2.webp";
+import gallery3 from "../assets/images/gallery3.webp";
+import gallery4 from "../assets/images/gallery4.webp";
 ---
 
 <MainLayout title="OM OS" page="omos">
@@ -177,114 +181,121 @@ import ispersoner from "../assets/images/istid_personer.webp";
         </div>
       </div>
     </div>
-    <section class="bg-rod-50 pt-L px-M">
-      <div class="flex overflow-x-scroll pb-10 hide-scroll-bar my-8">
-        <div class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 gap-S">
-          <div class="inline-block px-3">
-            <Image
-              src={isisolen}
-              alt=""
-              class="w-[700px] h-64 max-w-xs rounded-[300px] overflow-hidde"
-            />
-          </div>
-
-          <div class="inline-block px-3">
-            <Image
-              src={isisolen}
-              alt=""
-              class="w-[500px] h-64 max-w-xs rounded-[300px] overflow-hidde"
-            />
-          </div>
-
-          <div class="inline-block px-3">
-            <Image
-              src={isisolen}
-              alt=""
-              class="w-[500px] h-64 max-w-xs rounded-[300px] overflow-hidde"
-            />
-          </div>
-
-          <div class="inline-block px-3">
-            <Image
-              src={isisolen}
-              alt=""
-              class="w-[500px] h-64 max-w-xs rounded-[300px] overflow-hidde"
-            />
-          </div>
-
-          <div class="inline-block px-3">
-            <Image
-              src={isisolen}
-              alt=""
-              class="w-[500px] h-64 max-w-xs rounded-[300px] overflow-hidde"
-            />
-          </div>
-
-          <div class="inline-block px-3">
-            <Image
-              src={isisolen}
-              alt=""
-              class="w-[500px] h-64 max-w-xs rounded-[300px] overflow-hidde"
-            />
-          </div>
-
-          <div class="inline-block px-3">
-            <Image
-              src={isisolen}
-              alt=""
-              class="w-[500px] h-64 max-w-xs rounded-[300px] overflow-hidde"
-            />
-          </div>
-
-          <div class="inline-block px-3">
-            <Image
-              src={isisolen}
-              alt=""
-              class="w-[500px] h-64 max-w-xs rounded-[300px] overflow-hidde"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
   </section>
 
-  <div class="bg-rod-50 pt-L px-M">
-    <div class="overflow-x-auto whitespace-nowrap p-4">
-      <div class="">
+  <section class="bg-rod-50 py-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-S p-M">
+      <!-- Billede 1 -->
+      <div class="relative group aspect-[4/3] w-full">
         <Image
           src={isisolen}
-          alt="Is i solen"
-          class="inline-block w-40 h-40 object-cover mr-4"
-          id="billede2"
+          alt="Original Image 1"
+          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
+        />
+        <Image
+          src={gallery1}
+          alt="Hover Image 1"
+          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
         />
       </div>
 
-      <div class="">
+      <!-- Billede 2 -->
+      <div class="relative group aspect-[4/3] w-full">
         <Image
           src={ispågaden}
-          alt="Is på gadenn"
-          class="inline-block w-40 h-40 object-cover mr-4"
-          id="billede3"
+          alt="Original Image 2"
+          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
+        />
+        <Image
+          src={gallery2}
+          alt="Hover Image 2"
+          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
         />
       </div>
 
-      <div class="">
+      <!-- Billede 3 -->
+      <div class="relative group aspect-[4/3] w-full">
         <Image
           src={børnibutikken}
-          alt="Børn i butikken"
-          class="inline-block w-40 h-40 object-cover mr-4"
-          id="billede4"
+          alt="Gallery Image 3"
+          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
+        />
+        <Image
+          src={gallery3}
+          alt="Hover Gallery Image 3"
+          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
         />
       </div>
 
-      <div class="">
+      <!-- Billede 4 -->
+      <div class="relative group aspect-[4/3] w-full">
         <Image
           src={ibutikken}
-          alt="Kunder i butikken"
-          class="inline-block w-40 h-40 object-cover mr-4"
-          id="billede5"
+          alt="Gallery Image 4"
+          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
+        />
+        <Image
+          src={gallery4}
+          alt="Hover Gallery Image 4"
+          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Billede 1 -->
+      <div class="relative group aspect-[4/3] w-full">
+        <Image
+          src={isisolen}
+          alt="Original Image 1"
+          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
+        />
+        <Image
+          src={gallery1}
+          alt="Hover Image 1"
+          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Billede 2 -->
+      <div class="relative group aspect-[4/3] w-full">
+        <Image
+          src={ispågaden}
+          alt="Original Image 2"
+          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
+        />
+        <Image
+          src={gallery2}
+          alt="Hover Image 2"
+          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Billede 3 -->
+      <div class="relative group aspect-[4/3] w-full">
+        <Image
+          src={børnibutikken}
+          alt="Gallery Image 3"
+          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
+        />
+        <Image
+          src={gallery3}
+          alt="Hover Gallery Image 3"
+          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Billede 4 -->
+      <div class="relative group aspect-[4/3] w-full">
+        <Image
+          src={ibutikken}
+          alt="Gallery Image 4"
+          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
+        />
+        <Image
+          src={gallery4}
+          alt="Hover Gallery Image 4"
+          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
         />
       </div>
     </div>
-  </div>
+  </section>
 </MainLayout>
