@@ -64,8 +64,8 @@ import istidbutik from "/public/istidbutik.webp";
       <h2 class="h2_mobil md:h2 text-rod-500">Økologisk nitrogen is</h2>
       <p class="pstor_mobil md:p text-blaa-900">
         Økologisk nitrogen-is fra hjertet af Nørrebro – friskfrosset på stedet
-        for en cremet, intens smagsoplevelse. <br /> Vi laver også catering i
-        hele Danmark!
+        for en cremet, intens smagsoplevelse. <br /> Vi laver også catering i hele
+        Danmark!
       </p>
       <div
         class="absolute z-[-1] top-[10%] left-[15%] group-hover:animate__animated group-hover:animate__tada"
@@ -401,11 +401,11 @@ import istidbutik from "/public/istidbutik.webp";
         <h2 class="h2_mobil md:h2 text-gron-800 pb-XS">
           NITROGEN IS MERE END GOD SMAG
         </h2>
-        <p class="pstor_mobil md:p text-gron-800 pb-XS">
+        <p class="pstor_mobil md:p text-gron-800 pb-XS" id="nitrogen1">
           Hos ISTID bruger vi flydende nitrogen til at fryse isen – det sker ved
           minus 196 grader og direkte foran dig!
         </p>
-        <p class="pstor_mobil md:p text-gron-800">
+        <p class="pstor_mobil md:p text-gron-800" id="nitrogen2">
           Når isen lynfryses på denne måde, bevares smagene bedre, og strukturen
           bliver ekstra cremet.
         </p>
@@ -415,8 +415,8 @@ import istidbutik from "/public/istidbutik.webp";
       <div>
         <h2 class="h2_mobil md:h2 text-blaa-600 pb-XS">EVENTS OG CATERING</h2>
         <p class="pstor_mobil md:p text-rod-500 pb-XS">
-          Gør dit event til en uforglemmelig oplevelse <br /> Book vores
-          nitrogen-is catering i dag
+          Gør dit event til en uforglemmelig oplevelse <br /> Book vores nitrogen-is
+          catering i dag
         </p>
         <div class="md:pt-XS">
           <a href="event"><Button_S_Rod>BOOK NU</Button_S_Rod></a>
@@ -580,13 +580,14 @@ import istidbutik from "/public/istidbutik.webp";
 
       <div
         class="absolute bottom-[-40px] right-[20px] bg-gul-400 rounded-[600px] w-60 h-60 flex items-center justify-center text-center px-[45px] py-[45px] md:px-[50px] md:py-[80px]"
+        id="isboks"
       >
         <p class="text-rod-500 pstor_mobil md:pstor">
           <span class="font-bold">Is er noget</span><br />
           <span class="font-bold">vidunderligt</span>
-           og det <br />
-           fortjener en <br />fremtid, ikke kun <br />
-           en fortid
+          og det <br />
+          fortjener en <br />fremtid, ikke kun <br />
+          en fortid
         </p>
       </div>
     </section>
@@ -594,7 +595,7 @@ import istidbutik from "/public/istidbutik.webp";
       <h2 class="h2_mobil md:h2 text-blaa-700 pb-XS">
         fremtidens is - hvem er istid
       </h2>
-      <div class="md:grid grid-cols-2 gap-M md:py-S">
+      <div class="md:grid grid-cols-2 gap-M md:py-S" id="hvemeristid">
         <p class="md:p p_mobil text-blaa-900 pb-XS">
           Hos Istid skaber vi fremtidens is – ikke bare med flydende nitrogen,
           men med nysgerrighed, kvalitet og omtanke. Is er noget magisk. Det
@@ -814,6 +815,20 @@ import istidbutik from "/public/istidbutik.webp";
   <script>
     import { inView } from "motion";
 
+    // <-- inview nitrogen 1 -->
+    const nitrogen1zoomIn = document.querySelector("#nitrogen1");
+
+    inView(nitrogen1zoomIn, () => {
+      nitrogen1zoomIn.classList.add("animate__animated", "animate__zoomIn");
+    });
+
+    // <-- inview nitrogen 2 -->
+    const nitrogen2zoomIn = document.querySelector("#nitrogen2");
+
+    inView(nitrogen2zoomIn, () => {
+      nitrogen2zoomIn.classList.add("animate__animated", "animate__zoomIn");
+    });
+
     // <-- inview bil -->
     const bilFadein = document.querySelector("#bil");
 
@@ -821,6 +836,28 @@ import istidbutik from "/public/istidbutik.webp";
       bilFadein.classList.add(
         "animate__animated",
         "animate__fadeInRight",
+        "animate__delay-0.75s"
+      );
+    });
+
+    // <-- inview isboks -->
+    const isbokspulse = document.querySelector("#isboks");
+
+    inView(isbokspulse, () => {
+      isbokspulse.classList.add(
+        "animate__animated",
+        "animate__pulse",
+        "animate__infinite"
+      );
+    });
+
+    // <-- inview hvem er istid -->
+    const hvemeristidFadeinUpBig = document.querySelector("#hvemeristid");
+
+    inView(hvemeristidFadeinUpBig, () => {
+      hvemeristidFadeinUpBig.classList.add(
+        "animate__animated",
+        "animate__fadeInUpBig",
         "animate__delay-0.75s"
       );
     });
