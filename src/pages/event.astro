@@ -52,7 +52,7 @@ import Button from "../components/Button.astro";
     <section class="bg-gul-300 p-M md:p-L">
       <section class="pb-M">
         <h2 class="h2_mobil pb-XS text-gron-800 md:h2 md:text-center">
-          vors muligheder
+          vores muligheder
         </h2>
         <p class="pstor_mobil text-gron-800 md:text-center md:p">
           Vi tilbyder tre unikke måder at bringe isen ud til jer på – vælg
@@ -67,7 +67,7 @@ import Button from "../components/Button.astro";
         <a href="#popup">
           <div class="mb-M relative">
             <svg
-              class="relative z-30 mt-M pt-XXXS hover:scale-125"
+              class="relative z-30 mt-M pt-XXXS hover:scale-125 right-[30px]"
               width="270"
               height="234"
               viewBox="0 0 270 234"
@@ -343,7 +343,7 @@ import Button from "../components/Button.astro";
               </defs>
             </svg>
             <svg
-              class="absolute z-10 top-[10px] mr-auto ml-auto"
+              class="absolute z-10 top-[10px] right-[1px] mr-auto ml-auto"
               width="294"
               height="292"
               viewBox="0 0 294 292"
@@ -359,7 +359,9 @@ import Button from "../components/Button.astro";
                 fill="#DFE6D0"></ellipse>
             </svg>
 
-            <p class="pstor_mobil text-center pt-L text-gron-800 uppercase">
+            <p
+              class="pstor_mobil md:text-p_desk text-center pt-L text-gron-800 uppercase"
+            >
               POP UP IS-STAND
             </p>
           </div></a
@@ -368,7 +370,7 @@ import Button from "../components/Button.astro";
         <a href="#team">
           <div class="mb-M relative">
             <svg
-              class="relative z-30 mt-M relative left-[40px] md:left-[2px] hover:scale-125"
+              class="relative z-30 mt-M left-[5px] md:left-[20px] hover:scale-125"
               width="233"
               height="247"
               viewBox="0 0 233 247"
@@ -857,7 +859,7 @@ import Button from "../components/Button.astro";
             </svg>
 
             <svg
-              class="absolute z-10 top-[10px] md:-right-[30px] right-[10px] mr-4"
+              class="absolute z-10 top-[10px] md:-right-[10px] right-[10px] mr-4"
               width="294"
               height="292"
               viewBox="0 0 294 292"
@@ -873,7 +875,9 @@ import Button from "../components/Button.astro";
                 fill="#DFE6D0"></ellipse>
             </svg>
 
-            <p class="pstor_mobil text-center pt-L text-gron-800 uppercase">
+            <p
+              class="pstor_mobil md:text-p_desk text-center pt-L text-gron-800 uppercase"
+            >
               TEAMBUILDING WORKSHOP
             </p>
           </div></a
@@ -881,7 +885,7 @@ import Button from "../components/Button.astro";
         <a href="#bil">
           <div class="mb-M relative">
             <svg
-              class="relative z-30 mt-M hover:scale-125"
+              class="relative z-30 mt-M right-[25px] hover:scale-125"
               width="308"
               height="243"
               viewBox="0 0 308 243"
@@ -1372,7 +1376,9 @@ import Button from "../components/Button.astro";
                 transform="rotate(-0.307932 147.004 146.037)"
                 fill="#DFE6D0"></ellipse>
             </svg>
-            <p class="pstor_mobil text-center pt-L text-gron-800 uppercase">
+            <p
+              class="pstor_mobil md:text-p_desk text-center pt-L text-gron-800 uppercase"
+            >
               ISBRANDBIL/CYKEL
             </p>
           </div></a
@@ -1380,7 +1386,7 @@ import Button from "../components/Button.astro";
       </section>
     </section>
     <section id="popup" class="bg-rod-50 p-M md:p-L md:grid md:grid-cols-2">
-      <div class="order-1 md:order-2 md:self-end">
+      <div class="order-1 md:order-2 md:self-center">
         <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
           pop up is-stand
         </h2>
@@ -1388,12 +1394,11 @@ import Button from "../components/Button.astro";
           Et populært valg til konferencer og messer – eller som en ekstra
           forkælelse til medarbejderne i kantinen. Pop-up-formatet giver
           uendelige muligheder. Vi kan servere for alt fra 100 til 2000 gæster
-          eller flere – og det endda på ganske kort tid. <br /> Vi kan tilbyde
-          få eller mange forskellige smagsvarianter, lave ekstravagante
-          iscocktails eller blot servere en enkelt klassisk isvariant fra jeres
-          stand på en konference for at tiltrække og invitere potentielle kunder
-          til en snak om jeres service eller produkt. Alt, vi behøver, er et
-          bord og adgang til strøm.
+          eller flere – og det endda på ganske kort tid. <br /> Vi kan tilbyde få
+          eller mange forskellige smagsvarianter, lave ekstravagante iscocktails
+          eller blot servere en enkelt klassisk isvariant fra jeres stand på en konference
+          for at tiltrække og invitere potentielle kunder til en snak om jeres service
+          eller produkt. Alt, vi behøver, er et bord og adgang til strøm.
         </p>
       </div>
       <div class="order-2 md:order-1 md:justify-self-start">
@@ -1406,7 +1411,7 @@ import Button from "../components/Button.astro";
       </div>
     </section>
     <section id="team" class="bg-gul-100 p-M md:p-L md:grid md:grid-cols-2">
-      <section class="md:self-end">
+      <section class="md:self-center">
         <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-start">
           TEAMBUILDING wORKSHOP
         </h2>
@@ -1428,7 +1433,7 @@ import Button from "../components/Button.astro";
       </section>
     </section>
     <section id="bil" class="bg-blaa-50 p-M md:p-L md:grid md:grid-cols-2">
-      <section class="order-1 md:order-2 md:self-end">
+      <section class="order-1 md:order-2 md:self-center">
         <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
           is brandbil
         </h2>
