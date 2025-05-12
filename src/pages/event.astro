@@ -1,12 +1,12 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import event from "../assets/images/event.webp";
 import popup from "../assets/images/popup.webp";
 import brandbil from "../assets/images/brandbil.webp";
 import workshop from "../assets/images/workshop.webp";
+import Button from "../components/Button.astro";
 ---
 
 <MainLayout title="EVENTS OG CATERING" page="event">
@@ -30,7 +30,7 @@ import workshop from "../assets/images/workshop.webp";
         <h3 class="h3_mobil text-rod-500 md:h3">
           Istid står klar til tjeneste
         </h3>
-        <p class="pstor_mobil md:p text-blaa-900">
+        <p class="pstor_mobil md:p text-blaa-900 pb-XS">
           Står du og mangler et indslag til dit næste event? Vi står klar til
           tjeneste – uanset om det er konfirmation, bryllup eller firmafest. Om
           du har en stor have eller et fyldt konferencelokale, så finder vi en
@@ -38,12 +38,13 @@ import workshop from "../assets/images/workshop.webp";
           det enkelt med vores mobile isbar – uanset om du venter 100 eller 1000
           gæster.
         </p>
+        <Button>BOOK OS NU</Button>
       </section>
       <section>
         <Image
           src={event}
           alt="Billede af et isevent."
-          class="h-[670px] object-cover"
+          class="h-[730px] object-cover"
           loading="lazy"
         />
       </section>
@@ -53,7 +54,7 @@ import workshop from "../assets/images/workshop.webp";
         <h2 class="h2_mobil pb-XS text-gron-800 md:h2 md:text-center">
           vors muligheder
         </h2>
-        <p class="pstor_mobil text-gron-800 md:text-center md:p_desk">
+        <p class="pstor_mobil text-gron-800 md:text-center md:p">
           Vi tilbyder tre unikke måder at bringe isen ud til jer på – vælg
           mellem vores pop-up isstand, ikoniske isbrandbil eller en kreativ
           teambuilding workshop.
@@ -1555,10 +1556,12 @@ import workshop from "../assets/images/workshop.webp";
             placeholder="Bemærkninger"></textarea>
 
           <!-- Submit knap -->
-          <button
-            type="button"
-            class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
-            >SEND</button
+          <a href="tilmeld">
+            <button
+              type="button"
+              class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
+              >SEND</button
+            ></a
           >
         </form>
       </div>
