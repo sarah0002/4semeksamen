@@ -90,17 +90,26 @@ const backgroundColor =
   <!-- Mobile menu, der vises når showmenu er true -->
   <nav
     id="mobilmenu"
-    class="flex flex-col content-center"
+    class="flex flex-col items-center w-full max-w-md mx-auto z-50 mt-M"
     x-show="showmenu"
     x-transition
     x-on:click="showmenu = false"
     x-on:click.outside="showmenu = false"
   >
-    <ul class="font-worksans text-center p-4">
-      <li><Link href="/event">EVENTS OG CATERING</Link></li>
-      <li><Link href="/is">VORES IS</Link></li>
-      <li><Link href="/omos">OM OS</Link></li>
-      <li><Link href="/kontakt">KONTAKT</Link></li>
+    <ul class="p_knap_mobil text-center w-full space-y-4">
+      <li class="p-XS">
+        <Link href="/event" class="hover:font-bold">EVENTS OG CATERING</Link>
+      </li>
+      <li class="pb-XS">
+        <Link href="/is" class="hover:font-bold">VORES IS</Link>
+      </li>
+
+      <li class="pb-XS">
+        <Link href="/omos" class="hover:font-bold">OM OS</Link>
+      </li>
+      <li class="pb-XS">
+        <Link href="/kontakt" class="hover:font-bold">KONTAKT</Link>
+      </li>
     </ul>
   </nav>
 </div>
