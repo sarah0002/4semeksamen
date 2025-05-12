@@ -177,6 +177,44 @@ import ispersoner from "../assets/images/istid_personer.webp";
         </div>
       </div>
     </div>
+    <section>
+      <div class="relative w-80 h-80 mx-auto my-10">
+        <div class="absolute inset-0 animate-spin-slow">
+          <div class="absolute left-1/2 top-0 transform -translate-x-1/2">
+            <Image
+              src={anniken}
+              alt="Anniken"
+              class="w-16 h-16 rounded-full transform -rotate-[0deg]"
+              id="billede1"
+            />
+          </div>
+          <div class="absolute right-0 top-1/2 transform -translate-y-1/2">
+            <Image
+              src={isisolen}
+              alt="Is i solen"
+              class="w-16 h-16 rounded-full transform -rotate-[90deg]"
+              id="billede2"
+            />
+          </div>
+          <div class="absolute left-1/2 bottom-0 transform -translate-x-1/2">
+            <Image
+              src={børnibutikken}
+              alt="Børn i butikken"
+              class="w-16 h-16 rounded-full transform -rotate-[180deg]"
+              id="billede3"
+            />
+          </div>
+          <div class="absolute left-0 top-1/2 transform -translate-y-1/2">
+            <Image
+              src={børnibutikken}
+              alt="Børn i butikken"
+              class="w-16 h-16 rounded-full transform -rotate-[270deg]"
+              id="billede3"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="bg-rod-50 pt-L px-M md:-mb-[450px]">
       <div class="flex flex-col md:flex-row items-center">
@@ -225,43 +263,4 @@ import ispersoner from "../assets/images/istid_personer.webp";
       </div>
     </div>
   </section>
-
-  <script>
-    import { inView } from "motion";
-
-    // <-- inview billede 1 -->
-    const billede1Fadeup = document.querySelector("#billede1");
-
-    inView(billede1Fadeup, () => {
-      billede1Fadeup.classList.add("animate__animated", "animate__fadeInUpBig");
-    });
-
-    // <-- inview billede 2 -->
-    const billede2Fadeup = document.querySelector("#billede2");
-
-    inView(billede2Fadeup, () => {
-      billede2Fadeup.classList.add("animate__animated", "animate__fadeInUpBig");
-    });
-
-    // <-- inview billede 3 -->
-    const billede3Fadeup = document.querySelector("#billede3");
-
-    inView(billede3Fadeup, () => {
-      billede3Fadeup.classList.add("animate__animated", "animate__fadeInUpBig");
-    });
-
-    // <-- inview billede 4 -->
-    const billede4Fadeup = document.querySelector("#billede4");
-
-    inView(billede4Fadeup, () => {
-      billede4Fadeup.classList.add("animate__animated", "animate__fadeInUpBig");
-    });
-
-    // <-- inview billede 5 -->
-    const billede5Fadeup = document.querySelector("#billede5");
-
-    inView(billede5Fadeup, () => {
-      billede5Fadeup.classList.add("animate__animated", "animate__fadeInUpBig");
-    });
-  </script>
 </MainLayout>
