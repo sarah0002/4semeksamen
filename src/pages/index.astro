@@ -16,19 +16,20 @@ import forside1 from "../assets/images/forside1.webp";
 import forside2 from "../assets/images/forside2.webp";
 import ishænder from "../assets/images/ishænder.webp";
 import "animate.css";
+import istidbutik from "/public/istidbutik.webp";
 ---
 
 <MainLayout title="FORSIDE" page="index">
   <article class="">
     <section class="bg-blaa-50 relative pb-L overflow-hidden">
-      <div class="pt-L px-M">
-        <h3 class="h3_mobil md:h3 text-rod-500 md:pb-XXS">
+      <div class="pt-L px-L">
+        <h3 class="h3_mobil md:h3 text-rod-500 md:pb-XS">
           Velkommen til istid
         </h3>
         <h1 class="h1_mobil md:h1 text-blaa-600 md:pb-XXS">
           Is på en helt <br /> ny måde
         </h1>
-        <p class="pstor_mobil md:pstor text-blaa-600 pb-XXS">
+        <p class="pstor_mobil md:pstor text-blaa-600 pb-S">
           Håndlavet økologisk nitrogen is <br /> til hverdag og events
         </p>
         <a href="event"><Button>Book os nu</Button></a>
@@ -410,9 +411,7 @@ import "animate.css";
         </p>
       </div>
     </section>
-    <section
-      class="bg-rod-100 md:grid grid-cols-2 p-M justify-items-center md:py-XL"
-    >
+    <section class="bg-rod-100 md:grid md:grid-cols-2 p-M md:px-L md:py-XL">
       <div>
         <h2 class="h2_mobil md:h2 text-blaa-600 pb-XS">EVENTS OG CATERING</h2>
         <p class="pstor_mobil md:p text-rod-500 pb-XS">
@@ -423,11 +422,13 @@ import "animate.css";
           <a href="event"><Button_S_Rod>BOOK NU</Button_S_Rod></a>
         </div>
       </div>
+
       <div class="pt-S">
         <svg
           id="bil"
-          width="427.5"
-          height="184.5"
+          class="w-36 md:w-[427.5px] h-auto"
+          width="100%"
+          height="auto"
           viewBox="0 0 475 205"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -571,7 +572,7 @@ import "animate.css";
     </section>
     <section class="relative p-M">
       <Image
-        src={frabutik}
+        src={istidbutik}
         alt="Billede af en person der scooper is."
         class="w-full h-auto md:w-full md:h-[650px] object-cover"
         loading="lazy"
@@ -704,7 +705,7 @@ import "animate.css";
             </h2>
             <p class="text-rod-900 pstor_mobil md:pstor pb-XS md:w-[800px]">
               Tilfmeld dig vores nyhedsbrev og vær den første til at høre om
-              sæsonens is, nye smagsvarianter og åbninbgstider
+              sæsonens is, nye smagsvarianter og åbningstider
             </p>
           </div>
           <div class="md:pt-XS">

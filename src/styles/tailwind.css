@@ -15,7 +15,7 @@
   }
 
   .pstor {
-    @apply font-worksans uppercase text-pstor_desk;
+    @apply font-worksans text-pstor_desk;
   }
 
   .p {
