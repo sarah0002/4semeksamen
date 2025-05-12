@@ -611,10 +611,12 @@ import istidbutik from "/public/istidbutik.webp";
         </p>
       </div>
     </section>
-    <section class="bg-gron-400 md:grid grid-cols-2 p-M md:px-L">
+    <section class="bg-gron-400 md:grid grid-cols-2 p-M md:px-L sticky top-1/4">
       <div class="text-center md:text-left md:self-end">
-        <h2 class="h2_mobil md:h2 text-gron-800">høj kvalitet</h2>
-        <p class="pstor_mobil md:p text-gron-800 pb-S">
+        <h2 class="h2_mobil md:h2 text-gron-800 stickyparallax1">
+          høj kvalitet
+        </h2>
+        <p class="pstor_mobil md:p text-gron-800 pb-S stickyparallax1">
           Spørg bare, så fortæller vi dig det. Vi er stolte af at kunne fortælle
           vores kunder præcis, hvad der er i vores is. Vi ved det – for alt er
           lavet af os selv med de bedste økologiske råvarer og helt uden
@@ -630,7 +632,7 @@ import istidbutik from "/public/istidbutik.webp";
         />
       </div>
     </section>
-    <section class="bg-gul-400 p-M md:grid grid-cols-2 md:px-L">
+    <section class="bg-gul-400 p-M md:grid grid-cols-2 md:px-L sticky top-1/4">
       <div class="text-center md:text-left order-1 md:order-2 md:self-end">
         <h2 class="h2_mobil md:h2 text-gron-800 md:text-end">
           Overraskende smage
@@ -651,7 +653,7 @@ import istidbutik from "/public/istidbutik.webp";
         />
       </div>
     </section>
-    <section class="bg-blaa-200 p-M md:grid grid-cols-2 md:px-L">
+    <section class="bg-blaa-200 p-M md:grid grid-cols-2 md:px-L sticky top-0">
       <div class="text-center md:text-left md:self-end">
         <h2 class="h2_mobil md:h2 text-gron-800">Oplevelse</h2>
         <p class="pstor_mobil md:p text-gron-800 pb-S">
@@ -814,6 +816,7 @@ import istidbutik from "/public/istidbutik.webp";
 
   <script>
     import { inView } from "motion";
+    import { animate } from "motion";
 
     // <-- inview nitrogen 1 -->
     const nitrogen1zoomIn = document.querySelector("#nitrogen1");
@@ -860,6 +863,10 @@ import istidbutik from "/public/istidbutik.webp";
         "animate__fadeInUpBig",
         "animate__delay-0.75s"
       );
+    });
+
+    scroll(animate(".stickyparallax1", { y: [-300, 0] }), {
+      target: document.querySelector(".stickyparallax1"),
     });
   </script>
 </MainLayout>
