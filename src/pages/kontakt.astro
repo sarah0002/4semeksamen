@@ -1,8 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
-import Link from "../components/Link.astro";
-import { Image } from "astro:assets";
+import "animate.css";
 ---
 
 <MainLayout title="KONTAKT" page="kontakt">
@@ -72,6 +70,7 @@ import { Image } from "astro:assets";
         <div>
           <svg
             class="mt-L ml-L w-[500px] h-[500px] hidden md:block"
+            id="isvogn"
             width="346"
             height="265"
             viewBox="0 0 346 265"
@@ -634,4 +633,35 @@ import { Image } from "astro:assets";
       </div>
     </section>
   </article>
+
+  <script>
+    import { inView } from "motion";
+
+    // <-- inview isvogn -->
+    const isvognslideOutRight = document.querySelector("#isvogn");
+
+    inView(isvognslideOutRight, () => {
+      isvognslideOutRight.classList.add(
+        "animate__animated",
+        "customSlideOutRight"
+      );
+    });
+  </script>
+
+  <style>
+    @keyframes slideOutRightExtended {
+      0% {
+        transform: translateX(0); /* Start position */
+      }
+      100% {
+        transform: translateX(
+          200vw
+        ); /* Skub elementet længere ud mod højre (200% af viewport-bredden) */
+      }
+    }
+
+    .customSlideOutRight {
+      animation: slideOutRightExtended 4s 2s forwards; /* 4 sekunder animation + 2 sekunder forsinkelse */
+    }
+  </style>
 </MainLayout>
