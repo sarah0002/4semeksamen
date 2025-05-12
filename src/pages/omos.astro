@@ -1,24 +1,15 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
-import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import historie from "/public/historie.webp";
-import unikke from "/public/unikke.webp";
 import spiseis from "/public/spiseis.webp";
 import engangsservice from "/public/engangsservice.webp";
 import økovarer from "/public/økoråvarer.webp";
 import følgersæson from "/public/følgersæson.webp";
-import anniken from "/public/anniken.webp";
-import isisolen from "/public/3isisolen.webp";
-import børnibutikken from "/public/børnibutikken.webp";
-import ispågaden from "/public/ispågaden.webp";
-import ibutikken from "/public/ibutikken.webp";
 import ispersoner from "../assets/images/istid_personer.webp";
-import gallery1 from "../assets/images/gallery1.webp";
-import gallery2 from "../assets/images/gallery2.webp";
-import gallery3 from "../assets/images/gallery3.webp";
-import gallery4 from "../assets/images/gallery4.webp";
+import DesktopComponent from "../components/DesktopComponent.astro";
+import MobileComponent from "../components/MobileComponent.astro";
+
+import "animate.css";
 ---
 
 <MainLayout title="OM OS" page="omos">
@@ -182,120 +173,15 @@ import gallery4 from "../assets/images/gallery4.webp";
       </div>
     </div>
   </section>
+  <section>
+    <div class="block md:hidden">
+      {/* Denne vises kun på mobil – fx alle elementer synlige */}
+      <MobileComponent />
+    </div>
 
-  <section class="bg-rod-50 py-12">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-S p-M">
-      <!-- Billede 1 -->
-      <div class="relative group aspect-[4/3] w-full">
-        <Image
-          src={isisolen}
-          alt="Original Image 1"
-          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
-        />
-        <Image
-          src={gallery1}
-          alt="Hover Image 1"
-          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Billede 2 -->
-      <div class="relative group aspect-[4/3] w-full">
-        <Image
-          src={ispågaden}
-          alt="Original Image 2"
-          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
-        />
-        <Image
-          src={gallery2}
-          alt="Hover Image 2"
-          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Billede 3 -->
-      <div class="relative group aspect-[4/3] w-full">
-        <Image
-          src={børnibutikken}
-          alt="Gallery Image 3"
-          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
-        />
-        <Image
-          src={gallery3}
-          alt="Hover Gallery Image 3"
-          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Billede 4 -->
-      <div class="relative group aspect-[4/3] w-full">
-        <Image
-          src={ibutikken}
-          alt="Gallery Image 4"
-          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
-        />
-        <Image
-          src={gallery4}
-          alt="Hover Gallery Image 4"
-          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Billede 1 -->
-      <div class="relative group aspect-[4/3] w-full">
-        <Image
-          src={isisolen}
-          alt="Original Image 1"
-          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
-        />
-        <Image
-          src={gallery1}
-          alt="Hover Image 1"
-          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Billede 2 -->
-      <div class="relative group aspect-[4/3] w-full">
-        <Image
-          src={ispågaden}
-          alt="Original Image 2"
-          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
-        />
-        <Image
-          src={gallery2}
-          alt="Hover Image 2"
-          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Billede 3 -->
-      <div class="relative group aspect-[4/3] w-full">
-        <Image
-          src={børnibutikken}
-          alt="Gallery Image 3"
-          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
-        />
-        <Image
-          src={gallery3}
-          alt="Hover Gallery Image 3"
-          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
-        />
-      </div>
-
-      <!-- Billede 4 -->
-      <div class="relative group aspect-[4/3] w-full">
-        <Image
-          src={ibutikken}
-          alt="Gallery Image 4"
-          class="rounded-medium transition-opacity duration-300 ease-in-out group-hover:opacity-0 absolute inset-0 w-full h-full object-cover"
-        />
-        <Image
-          src={gallery4}
-          alt="Hover Gallery Image 4"
-          class="rounded-medium absolute inset-0 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 w-full h-full object-cover"
-        />
-      </div>
+    <div class="hidden md:block">
+      {/* Denne vises kun på desktop – fx med hover */}
+      <DesktopComponent />
     </div>
   </section>
 </MainLayout>
