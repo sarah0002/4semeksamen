@@ -124,7 +124,9 @@ export default {
     //     drop25: '4px 4px 4px 0 rgb(0 0 0 / 0.25)', /* x y blur spread farve / opacity */
     // },
 
-    extend: {},
+    extend: {
+    },
+    
   },
   plugins: [
     require("@tailwindcss/typography"),
@@ -132,4 +134,6 @@ export default {
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/container-queries"),
   ],
+
+  
 };
