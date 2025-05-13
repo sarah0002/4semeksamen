@@ -2,6 +2,10 @@
 @tailwind utilities;
 
 @layer base {
+
+  .display{
+    @apply font-minfont uppercase text-display_desk;
+  }
   .h1 {
     @apply font-minfont uppercase text-h1_desk;
   }
@@ -14,6 +18,11 @@
     @apply font-worksans uppercase text-h3_desk font-semibold;
   }
 
+
+.h4{
+  @apply font-worksans uppercase text-h4_desk font-bold; 
+}
+
   .pstor {
     @apply font-worksans text-pstor_desk;
   }
@@ -21,7 +30,7 @@
   .p {
     @apply font-worksans text-p_desk;
   }
-}
+
 
 .h1_mobil {
   @apply font-minfont uppercase text-h1_mobil;
@@ -35,12 +44,19 @@
   @apply font-worksans uppercase text-h3_mobil font-semibold;
 }
 
+.h4_mobil{
+  @apply font-worksans uppercase text-h4_mobil font-bold; 
+}
+
 .pstor_mobil {
   @apply font-worksans  text-pstor_mobil;
 }
 
 .p_mobil {
   @apply font-worksans text-p_mobil;
+}
+
+
 }
 
 @layer utilities {
