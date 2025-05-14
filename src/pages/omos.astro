@@ -30,6 +30,7 @@ import "animate.css";
       </h2>
       <p
         class="p_mobil md:p text-blaa-900 text-center md:text-left pb-M md:max-w-[850px]"
+        id="tekst1"
       >
         Istid blev grundlagt i 2014 af Anniken og Nina, drevet af ønsket om at
         skabe en anderledes isoplevelse. Inspireret af flydende nitrogen-is, som
@@ -58,6 +59,7 @@ import "animate.css";
       </h2>
       <p
         class="p_mobil md:p text-blaa-900 text-center md:text-right pb-M md:max-w-[850px] md:ml-auto"
+        id="tekst2"
       >
         Vi er de eneste i Danmark, der fryser vores is med flydende nitrogen –
         direkte foran dig. Det betyder, at vi kan lave frisk is på få sekunder,
@@ -76,7 +78,7 @@ import "animate.css";
 
     <section class="relative h-auto">
       <div
-        class="sticky top-[300px] transform -translate-y-1/2 flex justify-center z-10 rotate-center"
+        class="sticky top-[300px] transform -translate-y-1/2 hidden md:flex justify-center z-10 rotate-center"
       >
         <svg
           width="100"
@@ -194,12 +196,12 @@ import "animate.css";
       </div>
     </section>
     <section>
-      <div class="bg-gul-400 px-M py-L">
+      <div class="bg-gul-400 px-M pt-L pb-XS">
         <div class="flex flex-col items-center justify-center text-center">
           <h2 class="h2_mobil md:h2 text-blaa-600 pb-XS">
             Vores bæredygtige tiltag
           </h2>
-          <p class="p_mobil md:p text-blaa-900 max-w-3xl pb-L md:pb-XL">
+          <p class="p_mobil md:p text-blaa-900 max-w-3xl pb-XS md:pb-XL">
             Hos ISTID er vi i evig søgen efter den bedste og mest bæredygtige
             emballage, men det er ikke altid at det er muligt, at finde
             emballage, der både lever op til vores krav om bæredygtighed og
@@ -207,12 +209,11 @@ import "animate.css";
           </p>
         </div>
 
-        <div
-          class="grid md:grid-cols-3 pt-L gap-[250px] md:gap-0 justify-center"
-        >
-          <div class="relative flex flex-col items-center">
+        <div class="grid md:grid-cols-3 pt-L md:gap-0 justify-center">
+          <div class="relative flex flex-col items-center my-L">
             <div
-              class="bg-blaa-100 rounded-[600px] absolute bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center px-[50px] py-[100px] md:px-[70px] md:py-[100px]"
+              class="absolute bg-blaa-100 rounded-[600px] bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center px-[50px] py-[100px] md:px-[70px] md:py-[100px]"
+              id="boble1"
             >
               <h2 class="h2_mobil text-rod-500 text-center pb-XS">
                 engangsservice
@@ -228,9 +229,10 @@ import "animate.css";
               class="justify-center"
             />
           </div>
-          <div class="relative flex flex-col items-center">
+          <div class="relative flex flex-col items-center my-L">
             <div
-              class="absolute bg-blaa-100 rounded-[600px] bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center px-[50px] py-[100px] md:px-[105px] md:py-[70px]"
+              class="absolute bg-blaa-100 rounded-[600px] bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center px-[50px] py-[100px] md:px-[50px] md:py-[105px]"
+              id="boble2"
             >
               <h2 class="h2_mobil text-rod-500 text-center pb-XS">
                 økologiske råvarer
@@ -247,9 +249,10 @@ import "animate.css";
             />
           </div>
 
-          <div class="relative flex flex-col items-center">
+          <div class="relative flex flex-col items-center my-L">
             <div
-              class="absolute bg-blaa-100 rounded-[500px] bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center py-[90px] px-[80px] md:py-[75px] md:px-[70px] md:left-[-8px] md:right-[-8px]"
+              class="absolute bg-blaa-100 rounded-[600px] bottom-[160px] md:bottom-[220px] flex flex-col items-center justify-center text-center py-[90px] px-[50px] md:py-[95px] md:px-[50px]"
+              id="boble3"
             >
               <h2 class="h2_mobil text-rod-500 pb-XS">følger med sæsonen</h2>
               <p class="p_mobil md:p text-blaa-900 max-w-XL">
@@ -280,4 +283,64 @@ import "animate.css";
       </div>
     </section>
   </section>
+
+  <style>
+    .custom-delay-05s {
+      animation-delay: 0.5s !important;
+    }
+    .custom-delay-085s {
+      animation-delay: 0.85s !important;
+    }
+  </style>
+
+  <script>
+    import { inView } from "motion";
+
+    // <-- inview tekst1 -->
+    const tekst1zoomIn = document.querySelector("#tekst1");
+
+    inView(tekst1zoomIn, () => {
+      tekst1zoomIn.classList.add(
+        "animate__animated",
+        "animate__zoomIn",
+        "custom-delay-05s"
+      );
+    });
+
+    // <-- inview tekst2 -->
+    const tekst2zoomIn = document.querySelector("#tekst2");
+
+    inView(tekst2zoomIn, () => {
+      tekst2zoomIn.classList.add("animate__animated", "animate__zoomIn");
+    });
+
+    // <-- inview boble1 -->
+    const boble1zoomIn = document.querySelector("#boble1");
+
+    inView(boble1zoomIn, () => {
+      boble1zoomIn.classList.add("animate__animated", "animate__zoomIn");
+    });
+
+    // <-- inview boble2 -->
+    const boble2zoomIn = document.querySelector("#boble2");
+
+    inView(boble2zoomIn, () => {
+      boble2zoomIn.classList.add(
+        "animate__animated",
+        "animate__zoomIn",
+        "custom-delay-05s"
+      );
+    });
+
+    // <-- inview boble3 -->
+    const boble3zoomIn = document.querySelector("#boble3");
+
+    inView(boble3zoomIn, () => {
+      boble3zoomIn.classList.add(
+        "animate__animated",
+        "animate__zoomIn",
+        "custom-delay-085s"
+      );
+    });
+  </script>
 </MainLayout>
