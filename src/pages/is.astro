@@ -17,6 +17,7 @@ import is5 from "../assets/images/is5.webp";
 import is6 from "../assets/images/is6.webp";
 import is7 from "../assets/images/is7.webp";
 import data from "../assets/images/data.svg";
+import gallery6 from "../assets/images/gallery2.webp";
 ---
 
 <MainLayout title="VORES IS" page="is">
@@ -24,131 +25,181 @@ import data from "../assets/images/data.svg";
     <section class="p-M md:p-L text-center bg-rod-50">
       <h1 class="h1_mobil md:h1 text-rod-500">vores smage</h1>
       <p class="pstor_mobil md:pstor text-rod-500 md:px-M">
-        Vores menu består altid af fem forskellige isvarianter – tre faste
-        favoritter og to sæsonens smage, som vi løbende opdaterer. Vi har altid
-        mindst én vegansk mulighed på kortet. Isen serveres i vores hjemmelavede
-        kardemommevaffel eller i bæger – i tre størrelser. Hos os vælger du én
-        smag ad gangen – så får du den fulde oplevelse.
+        Frisklavet is med flydende nitrogen – cremet, økologisk og uden
+        tilsætningsstoffer. Menuen byder altid på fem varianter, heraf sæsonens
+        smage og mindst én vegansk mulighed.
       </p>
     </section>
-    <section class="relative pt-M md:pt-L">
-      <div class="">
-        <div class="p_mobil md:p pb-S pt-M px-M ml-[185px] md:ml-[600px]">
-          <p>
-            <span class="font-bold">Classic Vanilla</span> er en af vores
-            standard is varianter.
-          </p>
-          <p>
-            Du kan vælge at bygge videre på din classic vanilla og lave det til
-            en sunday.
-          </p>
-          <p>Kom forbi butikken og prøv den selv</p>
-        </div>
-        <div class="bg-gul-400">
+    <section>
+      <div class="bg-blaa-100 py-M px-M md:m-L md:relative">
+        <h2
+          class="h2_mobil md:h2 text-blaa-600 text-left md:text-left pb-XS md:pt-M"
+        >
+          Hvad gør Istids is helt unik?
+        </h2>
+        <p
+          class="p_mobil md:p text-blaa-900 text-left md:text-left pb-XS md:max-w-[900px]"
+        >
+          Istid laver is på en anderledes måde: med flydende nitrogen, som
+          lynfryser isen ved minus 196 grader – direkte foran kunden. Det
+          betyder, at isen altid er frisklavet, og butikken har slet ingen
+          frysere.
+        </p>
+
+        <p
+          class="p_mobil md:p text-blaa-900 text-left md:text-left pb-M md:max-w-[900px]"
+        >
+          Den hurtige frysning giver en særlig cremet konsistens, fordi
+          iskrystaller ikke når at danne sig. Samtidig kan man bruge mindre
+          sukker og undgå tilsætningsstoffer, da isen ikke skal holde sig i lang
+          tid. Alt laves fra bunden med økologiske råvarer – for en ren,
+          naturlig og helt unik isoplevelse. <br />Isen serveres i vores
+          hjemmelavede kardemommevaffel eller i bæger – i tre størrelser. Hos os
+          vælger du én smag ad gangen – så får du den fulde oplevelse.
+        </p>
+        <div>
           <Image
-            src={vanilje_indhold}
-            alt="Billede af en person der scooper is."
-            class="w-[300px] h-[120px] md:w-[600px] md:h-[300px] object-cover my-XXS ml-[200px] md:ml-[800px]"
+            src={gallery6}
+            alt="billede af is"
+            class="w-[300px] mx-auto mt-4 md:w-[500px] md:absolute top-[760px] left-[1120px] rounded-[300px]"
             loading="lazy"
           />
         </div>
       </div>
-
-      <div>
-        <Image
-          src={vanilje}
-          alt="Billede af en person der scooper is."
-          class="absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-[400px] bottom-[40px] left-[20px] md:bottom-[50px] md:left-[90px] z-20"
-          loading="lazy"
-        />
-      </div>
-      <div>
-        <p
-          class="text-center absolute bottom-[60px] left-[93px] md:bottom-[100px] md:left-[240px] z-20 pstor_mobil md:pstor text-rod-500 font-bold"
-        >
-          CLASSIC <br />VANILLA
+    </section>
+    <section class="bg-gul-300">
+      <div class="p-M md:p-L md:px-L">
+        <h2 class="h2_mobil md:h2 text-gul-900 pb-XS">
+          vores tre faste favoritter
+        </h2>
+        <p class="text-gul-900">
+          Blandt vores fem varianter finder du altid tre faste favoritter.
         </p>
       </div>
-    </section>
-    <section class="relative pt-M md:pt-L">
-      <div class="">
-        <div class="p_mobil md:p pb-S pt-M px-M ml-[185px] md:ml-[600px]">
-          <p>
-            <span class="font-bold">Salty Caramel</span> er en af vores populære
-            standardvarianter – balancen mellem sødt og salt gør den
-            uimodståelig.
-          </p>
-          <p>
-            Gør den ekstra lækker med dine foretrukne toppings og lav din egen
-            sundae.
-          </p>
-          <p>Kom forbi og oplev den hos os.</p>
-        </div>
-        <div class="bg-gul-400">
-          <Image
-            src={salty_indhold}
-            alt="Billede af en person der scooper is."
-            class="w-[300px] h-[120px] md:w-[600px] md:h-[300px] object-cover my-XXS ml-[200px] md:ml-[800px]"
-            loading="lazy"
-          />
-        </div>
-      </div>
-
-      <div class="text-center">
-        <Image
-          src={salty}
-          alt="Billede af en person der scooper is."
-          class="absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-[400px] bottom-[40px] left-[20px] md:bottom-[50px] md:left-[100px] z-20"
-          loading="lazy"
-        />
-      </div>
-      <div>
-        <p
-          class="text-center absolute bottom-[55px] left-[90px] md:bottom-[100px] md:left-[248px] z-20 pstor_mobil md:pstor text-rod-500 font-bold"
-        >
-          SALTY <br />CARAMEL
-        </p>
-      </div>
-    </section>
-    <section class="relative pt-M md:pt-L">
-      <div class="">
-        <div class="p_mobil md:p pb-S pt-M px-M ml-[185px] md:ml-[600px]">
-          <p>
-            <span class="font-bold">Chocolate Sorbet</span> er en fast del af
-            vores sortiment – intens i smagen, helt uden mælk og stadig
-            fantastisk cremet.
-          </p>
-          <p>Den er perfekt som den er eller med et twist af toppings.</p>
-          <p>Prøv den næste gang du kigger forbi.</p>
-        </div>
-        <div class="text-center">
-          <div class="bg-gul-400">
-            <Image
-              src={choko_indhold}
-              alt="Billede af en person der scooper is."
-              class="w-[270px] h-[120px] md:w-[600px] md:h-[300px] object-cover my-XXS ml-[240px] md:ml-[800px]"
-              loading="lazy"
-            />
-          </div>
-
-          <div>
-            <Image
-              src={choko}
-              alt="Billede af en person der scooper is."
-              class="absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-[400px] bottom-[40px] left-[20px] md:bottom-[50px] md:left-[100px] z-20"
-              loading="lazy"
-            />
-          </div>
-
-          <div>
-            <p
-              class="text-center absolute bottom-[55px] left-[82px] md:bottom-[100px] md:left-[229px] z-20 pstor_mobil md:pstor text-rod-500 font-bold"
-            >
-              CHOCOLATE <br />SORBET
+      <section class="relative pt-M md:pt-L">
+        <div class="pstor_mobil md:pstor text-gul-900">
+          <div class="bg-gul-100 p-L">
+            <p class="md:ml-[500px] pb-XS">
+              <span class="font-bold">Classic Vanilla</span> er en af vores
+              faste favoritter – enkel, cremet og fyldt med smag.
+            </p>
+            <p class="md:ml-[500px] pb-XS">
+              Du kan toppe den med hjemmelavede saucer og knas og forvandle den
+              til en lækker sundae.
+            </p>
+            <p class="md:ml-[500px] pb-XS">
+              Kig forbi butikken og smag selv.er en af vores standard is
+              varianter.
             </p>
           </div>
         </div>
-      </div>
+
+        <div>
+          <Image
+            src={vanilje}
+            alt="Billede af en person der scooper is."
+            class="absolute
+            w-[300px] h-[300px]
+            md:w-[400px] md:h-[400px]
+            rounded-[400px]
+            z-20
+            border-[30px] border-gul-100
+            top-1/2 left-1/2
+            -translate-x-1/2 -translate-y-1/2
+            md:top-[100px] md:left-[100px]
+            md:translate-x-0 md:translate-y-0
+            md:bottom-[50px] md:left-[90px]"
+            loading="lazy"
+          />
+        </div>
+        <div>
+          <p
+            class="text-center absolute bottom-[60px] left-[93px] md:bottom-[100px] md:left-[240px] z-20 pstor_mobil md:pstor text-rod-500 font-bold"
+          >
+            CLASSIC <br />VANILLA
+          </p>
+        </div>
+      </section>
+      <section class="relative pt-M md:pt-L">
+        <div class="">
+          <div class="p_mobil md:p pb-S pt-M px-M ml-[185px] md:ml-[600px]">
+            <p>
+              <span class="font-bold">Salty Caramel</span> er en af vores
+              populære standardvarianter – balancen mellem sødt og salt gør den
+              uimodståelig.
+            </p>
+            <p>
+              Gør den ekstra lækker med dine foretrukne toppings og lav din egen
+              sundae.
+            </p>
+            <p>Kom forbi og oplev den hos os.</p>
+          </div>
+          <div class="bg-gul-400">
+            <Image
+              src={salty_indhold}
+              alt="Billede af en person der scooper is."
+              class="w-[300px] h-[120px] md:w-[600px] md:h-[300px] object-cover my-XXS ml-[200px] md:ml-[800px]"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="text-center">
+          <Image
+            src={salty}
+            alt="Billede af en person der scooper is."
+            class="absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-[400px] bottom-[40px] left-[20px] md:bottom-[50px] md:left-[100px] z-20"
+            loading="lazy"
+          />
+        </div>
+        <div>
+          <p
+            class="text-center absolute bottom-[55px] left-[90px] md:bottom-[100px] md:left-[248px] z-20 pstor_mobil md:pstor text-rod-500 font-bold"
+          >
+            SALTY <br />CARAMEL
+          </p>
+        </div>
+      </section>
+      <section class="relative pt-M md:pt-L">
+        <div class="">
+          <div class="p_mobil md:p pb-S pt-M px-M ml-[185px] md:ml-[600px]">
+            <p>
+              <span class="font-bold">Chocolate Sorbet</span> er en fast del af
+              vores sortiment – intens i smagen, helt uden mælk og stadig
+              fantastisk cremet.
+            </p>
+            <p>Den er perfekt som den er eller med et twist af toppings.</p>
+            <p>Prøv den næste gang du kigger forbi.</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-gul-400">
+              <Image
+                src={choko_indhold}
+                alt="Billede af en person der scooper is."
+                class="w-[270px] h-[120px] md:w-[600px] md:h-[300px] object-cover my-XXS ml-[240px] md:ml-[800px]"
+                loading="lazy"
+              />
+            </div>
+
+            <div>
+              <Image
+                src={choko}
+                alt="Billede af en person der scooper is."
+                class="absolute w-[200px] h-[200px] md:w-[400px] md:h-[400px] rounded-[400px] bottom-[40px] left-[20px] md:bottom-[50px] md:left-[100px] z-20"
+                loading="lazy"
+              />
+            </div>
+
+            <div>
+              <p
+                class="text-center absolute bottom-[55px] left-[82px] md:bottom-[100px] md:left-[229px] z-20 pstor_mobil md:pstor text-rod-500 font-bold"
+              >
+                CHOCOLATE <br />SORBET
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <section class="grid grid-cols-7 pt-L">
