@@ -8,6 +8,7 @@ import følgersæson from "/public/følgersæson.webp";
 import ispersoner from "../assets/images/istid_personer.webp";
 import DesktopComponent from "../components/DesktopComponent.astro";
 import MobileComponent from "../components/MobileComponent.astro";
+import unikke from "../assets/images/unikke.webp";
 
 import "animate.css";
 ---
@@ -69,11 +70,14 @@ import "animate.css";
         det om rene ingredienser, ægte smagsoplevelser og en is, der både føles
         lettere og smager friskere.
       </p>
-      <img
-        src="/public/unikke.webp"
-        alt="billede af event"
-        class="w-1/2 mx-auto mt-4 md:w-1/3 md:absolute top-[100px] left-[-50px]"
-      />
+      <div>
+        <Image
+          src={unikke}
+          alt="billede af event"
+          class="w-1/2 mx-auto mt-4 md:w-[700px] md:h-[500px] md:absolute top-[100px] left-[-50px]"
+          loading="lazy"
+        />
+      </div>
     </div>
 
     <section class="relative h-auto">

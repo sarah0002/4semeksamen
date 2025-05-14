@@ -1389,79 +1389,89 @@ import "motion";
         >
       </section>
     </section>
-    <section
-      id="popup"
-      class="popup bg-rod-50 p-M md:p-L md:grid md:grid-cols-2"
-    >
-      <div class="order-1 md:order-2 content-center">
-        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
-          pop up is-stand
-        </h2>
-        <p class="p_mobil md:p text-blaa-900 text-center md:text-end">
-          Et populært valg til konferencer og messer – eller som en ekstra
-          forkælelse til medarbejderne i kantinen. Pop-up-formatet giver
-          uendelige muligheder. Vi kan servere for alt fra 100 til 2000 gæster
-          eller flere – og det endda på ganske kort tid. <br /> Vi kan tilbyde
-          få eller mange forskellige smagsvarianter, lave ekstravagante
-          iscocktails eller blot servere en enkelt klassisk isvariant fra jeres
-          stand på en konference for at tiltrække og invitere potentielle kunder
-          til en snak om jeres service eller produkt. Alt, vi behøver, er et
-          bord og adgang til strøm.
-        </p>
-      </div>
-      <div class="order-2 md:order-1 md:justify-self-start">
-        <Image
-          src={popup}
-          alt="Billede af et isevent."
-          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover mr-auto ml-auto mt-S md:mt-0"
-          loading="lazy"
-        />
-      </div>
-    </section>
-    <section id="bil" class="bg-gron-200 p-M md:p-L md:grid md:grid-cols-2">
-      <section class="content-center">
-        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-start">
-          is brandbil
-        </h2>
-        <p class="p_mobil text-gron-900 text-center md:p md:text-start">
-          Perfekt til udendørs sommerfester, musikfestivaler, bryllupper eller
-          det store kundeevent i virksomheden... ISTIDs retro brandbil er en 50
-          år gammel dame, der kan få alle til at smile. Med sit skinnende røde
-          ydre og stribede tag skaber hun en nostalgisk og charmerende ramme
-          omkring servering af is i høj kvalitet til glade og sultne gæster.
-          (Som en ældre dame er hun lidt langsom på vejene, så hun kører kun ud
-          til arrangementer på Sjælland.)
-        </p>
+    <section class="h-[250vh] relative">
+      <section
+        id="popup"
+        class="popup bg-rod-50 p-M md:p-L md:grid md:grid-cols-2 sticky top-[1vh] md:h-[80vh]"
+      >
+        <div class="order-1 md:order-2 content-center">
+          <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
+            pop up is-stand
+          </h2>
+          <p class="p_mobil md:p text-blaa-900 text-center md:text-end">
+            Et populært valg til konferencer og messer – eller som en ekstra
+            forkælelse til medarbejderne i kantinen. Pop-up-formatet giver
+            uendelige muligheder. Vi kan servere for alt fra 100 til 2000 gæster
+            eller flere – og det endda på ganske kort tid. <br /> Vi kan tilbyde
+            få eller mange forskellige smagsvarianter, lave ekstravagante iscocktails
+            eller blot servere en enkelt klassisk isvariant fra jeres stand på en
+            konference for at tiltrække og invitere potentielle kunder til en snak
+            om jeres service eller produkt. Alt, vi behøver, er et bord og adgang
+            til strøm.
+          </p>
+        </div>
+        <div class="order-2 md:order-1 md:justify-self-start">
+          <Image
+            src={popup}
+            alt="Billede af et isevent."
+            class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] object-cover mr-auto ml-auto mt-S md:mt-0"
+            loading="lazy"
+          />
+        </div>
       </section>
-      <section class="md:justify-self-end">
-        <Image
-          src={brandbil}
-          alt="Billede af et isevent."
-          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover object-center sm:object-[center] mr-auto ml-auto mt-S md:mt-0"
-          loading="lazy"
-        />
+      <section
+        id="bil"
+        class="bg-gron-200 p-M md:p-L md:grid md:grid-cols-2 sticky top-[1vh] md:h-[80vh]"
+      >
+        <section class="content-center">
+          <h2
+            class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-start"
+          >
+            is brandbil
+          </h2>
+          <p class="p_mobil text-gron-900 text-center md:p md:text-start">
+            Perfekt til udendørs sommerfester, musikfestivaler, bryllupper eller
+            det store kundeevent i virksomheden... ISTIDs retro brandbil er en
+            50 år gammel dame, der kan få alle til at smile. Med sit skinnende
+            røde ydre og stribede tag skaber hun en nostalgisk og charmerende
+            ramme omkring servering af is i høj kvalitet til glade og sultne
+            gæster. (Som en ældre dame er hun lidt langsom på vejene, så hun
+            kører kun ud til arrangementer på Sjælland.)
+          </p>
+        </section>
+        <section class="md:justify-self-end">
+          <Image
+            src={brandbil}
+            alt="Billede af et isevent."
+            class="h-[300px] w-[300px] md:h-[500px] md:w-[525px] object-cover object-center sm:object-[center] mr-auto ml-auto mt-S md:mt-0"
+            loading="lazy"
+          />
+        </section>
       </section>
-    </section>
-    <section id="team" class="bg-blaa-50 md:p-L p-M md:grid md:grid-cols-2">
-      <section class="order-1 md:order-2 content-center">
-        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
-          TEAMBUILDING wORKSHOP
-        </h2>
-        <p class="pstor_mobil md:p text-blaa-900 text-center md:text-end">
-          Som et nyt tilbud afholder vi sjove og kreative is-workshops, hvor
-          deltagerne i par får lov til selv at fryse deres egen is ved hjælp af
-          flydende nitrogen og almindeligt køkkenudstyr. Øvelsen er en sjov og
-          enkel måde at ryste sammen på eller lære hinanden at kende på en
-          anderledes måde.
-        </p>
-      </section>
-      <section class="md:justify-self-start">
-        <Image
-          src={workshop}
-          alt="Billede af et isevent."
-          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover mr-auto ml-auto mt-S md:mt-0"
-          loading="lazy"
-        />
+      <section
+        id="team"
+        class="bg-blaa-50 md:p-L p-M md:grid md:grid-cols-2 sticky top-[1vh] md:h-[80vh]"
+      >
+        <section class="order-1 md:order-2 content-center">
+          <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
+            TEAMBUILDING wORKSHOP
+          </h2>
+          <p class="pstor_mobil md:p text-blaa-900 text-center md:text-end">
+            Som et nyt tilbud afholder vi sjove og kreative is-workshops, hvor
+            deltagerne i par får lov til selv at fryse deres egen is ved hjælp
+            af flydende nitrogen og almindeligt køkkenudstyr. Øvelsen er en sjov
+            og enkel måde at ryste sammen på eller lære hinanden at kende på en
+            anderledes måde.
+          </p>
+        </section>
+        <section class="md:justify-self-start">
+          <Image
+            src={workshop}
+            alt="Billede af et isevent."
+            class="h-[300px] w-[300px] md:h-[520px] md:w-[500px] object-cover mr-auto ml-auto mt-S md:mt-0"
+            loading="lazy"
+          />
+        </section>
       </section>
     </section>
 
