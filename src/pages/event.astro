@@ -48,7 +48,7 @@ import "motion";
           src={event}
           id="sektion11"
           alt="Billede af et isevent."
-          class="h-[730px] object-cover"
+          class="md:h-[730px] object-cover"
           loading="lazy"
         />
       </section>
@@ -71,7 +71,7 @@ import "motion";
         <a href="#popup">
           <div class="mb-M relative">
             <svg
-              class="relative z-30 mt-M pt-XXXS hover:scale-125 right-[30px]"
+              class="relative z-30 mt-M pt-XXXS hover:scale-125 right-[30px] ml-auto"
               width="270"
               height="234"
               viewBox="0 0 270 234"
@@ -374,7 +374,7 @@ import "motion";
         <a href="#team">
           <div class="mb-M relative">
             <svg
-              class="relative z-30 mt-M left-[5px] md:left-[20px] hover:scale-125"
+              class="relative z-30 mt-M left-[5px] md:left-[20px] hover:scale-125 mr-[40px] ml-auto md:mr-none md:ml-none"
               width="233"
               height="247"
               viewBox="0 0 233 247"
@@ -1393,7 +1393,7 @@ import "motion";
       id="popup"
       class="popup bg-rod-50 p-M md:p-L md:grid md:grid-cols-2"
     >
-      <div class="order-1 md:order-2">
+      <div class="order-1 md:order-2 content-center">
         <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
           pop up is-stand
         </h2>
@@ -1413,13 +1413,13 @@ import "motion";
         <Image
           src={popup}
           alt="Billede af et isevent."
-          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover"
+          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover mr-auto ml-auto mt-S md:mt-0"
           loading="lazy"
         />
       </div>
     </section>
     <section id="bil" class="bg-gron-200 p-M md:p-L md:grid md:grid-cols-2">
-      <section class="">
+      <section class="content-center">
         <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-start">
           is brandbil
         </h2>
@@ -1437,17 +1437,17 @@ import "motion";
         <Image
           src={brandbil}
           alt="Billede af et isevent."
-          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover object-center sm:object-[center]"
+          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover object-center sm:object-[center] mr-auto ml-auto mt-S md:mt-0"
           loading="lazy"
         />
       </section>
     </section>
     <section id="team" class="bg-blaa-50 md:p-L p-M md:grid md:grid-cols-2">
-      <section class="order-1 md:order-2">
-        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-start">
+      <section class="order-1 md:order-2 content-center">
+        <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
           TEAMBUILDING wORKSHOP
         </h2>
-        <p class="pstor_mobil md:p text-blaa-900 text-center md:text-start">
+        <p class="pstor_mobil md:p text-blaa-900 text-center md:text-end">
           Som et nyt tilbud afholder vi sjove og kreative is-workshops, hvor
           deltagerne i par får lov til selv at fryse deres egen is ved hjælp af
           flydende nitrogen og almindeligt køkkenudstyr. Øvelsen er en sjov og
@@ -1459,7 +1459,7 @@ import "motion";
         <Image
           src={workshop}
           alt="Billede af et isevent."
-          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover"
+          class="h-[300px] w-[300px] md:h-[500px] md:w-[500px] rounded-[300px] object-cover mr-auto ml-auto mt-S md:mt-0"
           loading="lazy"
         />
       </section>
