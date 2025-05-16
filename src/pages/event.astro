@@ -54,7 +54,7 @@ import "motion";
       </section>
     </section>
     <section class="bg-gul-300 p-M md:p-L">
-      <section class="pb-M">
+      <section class="pb-XS md:pb-M">
         <h2 class="h2_mobil pb-XS text-gron-800 md:h2 md:text-center">
           vores muligheder
         </h2>
@@ -1392,7 +1392,7 @@ import "motion";
     <section class="h-[250vh] relative">
       <section
         id="popup"
-        class="popup bg-rod-50 p-M md:p-L md:grid md:grid-cols-2 sticky top-[1vh] md:h-[80vh]"
+        class="popup bg-rod-50 p-M md:p-L md:grid md:grid-cols-2 sticky top-[1vh] md:h-[90vh]"
       >
         <div class="order-1 md:order-2 content-center">
           <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
@@ -1421,7 +1421,7 @@ import "motion";
       </section>
       <section
         id="bil"
-        class="bg-gron-200 p-M md:p-L md:grid md:grid-cols-2 sticky top-[1vh] md:h-[80vh]"
+        class="bg-gron-200 p-M md:p-L md:grid md:grid-cols-2 sticky top-[1vh] md:h-[90vh]"
       >
         <section class="content-center">
           <h2
@@ -1450,7 +1450,7 @@ import "motion";
       </section>
       <section
         id="team"
-        class="bg-blaa-50 md:p-L p-M md:grid md:grid-cols-2 sticky top-[1vh] md:h-[80vh]"
+        class="bg-blaa-50 md:p-L p-M md:grid md:grid-cols-2 sticky top-[1vh] md:h-[90vh]"
       >
         <section class="order-1 md:order-2 content-center">
           <h2 class="h2_mobil text-rod-500 text-center pb-XS md:h2 md:text-end">
@@ -1778,8 +1778,8 @@ import "motion";
     // <-- inview sektion1 -->
     const sektion1Fadein = document.querySelector("#sektion1");
 
-    inView(sektion1, () => {
-      sektion1.classList.add(
+    inView(sektion1Fadein, () => {
+      sektion1Fadein.classList.add(
         "animate__animated",
         "animate__zoomIn", // Blødere end zoom
         "animate__slow" // Gør animationen langsommere
