@@ -1396,11 +1396,11 @@ import "motion";
             forkælelse til medarbejderne i kantinen. Pop-up-formatet giver
             uendelige muligheder. Vi kan servere for alt fra 100 til 2000 gæster
             eller flere – og det endda på ganske kort tid. <br /> Vi kan tilbyde
-            få eller mange forskellige smagsvarianter, lave ekstravagante iscocktails
-            eller blot servere en enkelt klassisk isvariant fra jeres stand på en
-            konference for at tiltrække og invitere potentielle kunder til en snak
-            om jeres service eller produkt. Alt, vi behøver, er et bord og adgang
-            til strøm.
+            få eller mange forskellige smagsvarianter, lave ekstravagante
+            iscocktails eller blot servere en enkelt klassisk isvariant fra
+            jeres stand på en konference for at tiltrække og invitere
+            potentielle kunder til en snak om jeres service eller produkt. Alt,
+            vi behøver, er et bord og adgang til strøm.
           </p>
         </div>
         <div class="order-2 md:order-1 md:justify-self-start">
@@ -1660,51 +1660,82 @@ import "motion";
           <!-- Input felter -->
           <div class="md:grid md:grid-cols-2 md:gap-S">
             <div>
+              <label for="navn" class="sr-only">Navn</label>
               <input
+                id="navn"
+                name="navn"
                 class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS bg-transparent"
                 type="text"
                 placeholder="Navn *"
                 required
               />
+
+              <label for="email" class="sr-only">Email</label>
               <input
+                id="email"
+                name="email"
                 class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS bg-transparent"
                 type="email"
                 placeholder="Email *"
                 required
               />
+
+              <label for="efternavn" class="sr-only">Efternavn</label>
               <input
+                id="efternavn"
+                name="efternavn"
                 class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS bg-transparent"
                 type="text"
                 placeholder="Efternavn *"
                 required
               />
+
+              <label for="telefon" class="sr-only">Telefonnummer</label>
               <input
+                id="telefon"
+                name="telefon"
                 class="w-full border border-blaa-500 rounded-medium p-XXS mt-XXS mb-M bg-transparent"
                 type="tel"
                 placeholder="Telefonnummer *"
                 required
               />
             </div>
+
             <div>
+              <label for="dato" class="sr-only">Dato for event</label>
               <input
+                id="dato"
+                name="dato"
                 class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS bg-transparent"
                 type="text"
                 placeholder="Dato for event *"
                 required
               />
+
+              <label for="adresse" class="sr-only">Adresse</label>
               <input
+                id="adresse"
+                name="adresse"
                 class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS bg-transparent"
                 type="text"
                 placeholder="Adresse/Lokation *"
                 required
               />
+
+              <label for="tidspunkt" class="sr-only">Tidspunkt</label>
               <input
+                id="tidspunkt"
+                name="tidspunkt"
                 class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS bg-transparent"
                 type="text"
                 placeholder="Tidspunkt for event *"
                 required
               />
+
+              <label for="antal" class="sr-only">Antal gæster</label>
               <input
+                id="antal"
+                name="antal"
                 class="w-full border border-blaa-500 rounded-medium p-XXS mt-XXS mb-M bg-transparent"
                 type="number"
                 placeholder="Antal gæster *"
@@ -1745,18 +1776,20 @@ import "motion";
           </div>
 
           <!-- Bemærkninger -->
+          <label for="bemaerkning" class="sr-only">Bemærkninger</label>
           <textarea
+            id="bemaerkning"
+            name="bemaerkning"
             class="w-full h-[150px] border border-blaa-500 rounded-medium p-XXS my-XXS h-32 resize-none bg-transparent"
             placeholder="Bemærkninger"></textarea>
 
           <!-- Submit knap -->
-          <a href="tilmeld">
-            <button
-              type="button"
-              class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS hover:bg-blaa-500 hover:text-blaa-50"
-              >SEND</button
-            ></a
+          <button
+            type="submit"
+            class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS hover:bg-blaa-500 hover:text-blaa-50"
           >
+            SEND
+          </button>
         </form>
       </div>
     </section>
