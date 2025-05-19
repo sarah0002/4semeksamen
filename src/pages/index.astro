@@ -580,23 +580,20 @@ import smag from "../assets/images/smag.png";
           </div>
           <div class="md:pt-XS">
             <form class="flex gap-S">
-              <label for="newsletter-email
-              ">
-                <input
-                  type="email"
-                  placeholder="Din e-mail"
-                  class="border border-rod-500 rounded-medium bg-transparent p-XXS text-rod-600 placeholder-rod-600 uppercase bg-none w-[250px] md:w-[500px]"
-                  required
-                /></label
+              <label for="newsletter-email" class="sr-only">Din e-mail</label>
+              <input
+                id="newsletter-email"
+                type="email"
+                placeholder="Din e-mail"
+                class="border border-rod-500 rounded-medium bg-transparent p-XXS text-rod-600 placeholder-rod-600 uppercase bg-none w-[250px] md:w-[500px]"
+                required
+              />
+              <button
+                type="submit"
+                class="border border-rod-500 text-rod-600 p-XXS rounded-medium"
               >
-              <a href="nyhed">
-                <button
-                  type="button"
-                  class="border border-rod-500 text-rod-600 p-XXS rounded-medium"
-                >
-                  TILMELD NU
-                </button></a
-              >
+                TILMELD NU
+              </button>
             </form>
           </div>
         </div>
