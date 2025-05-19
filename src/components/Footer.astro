@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/images/logo.png";
+import økologi from "/public/økologi.svg";
+import fødevarekontrol from "/public/fødevarekontrol.svg";
 ---
 
 <section class="bg-gul-400 p-M md:px-L md:py-L">
@@ -85,7 +86,12 @@ import logo from "../assets/images/logo.png";
     </div>
   </div>
   <div class="flex flex-row gap-S py-XS md:py-M">
-    <img src="/public/økologi.svg" alt="økologimærket" />
-    <img src="/public/fødevarekontrol.svg" alt="fødevarekontrol mærket" />
+    <Image src={økologi} alt="økologimærket" class="" loading="lazy" />
+    <Image
+      src={fødevarekontrol}
+      alt="fødevarekontrol mærket"
+      class=""
+      loading="lazy"
+    />
   </div>
 </section>
