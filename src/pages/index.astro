@@ -1,19 +1,13 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
-import Button_Gul from "../components/Button_Gul.astro";
 import Button_S_Gul from "../components/Button_S_Gul.astro";
 import Button_S_Rod from "../components/Button_S_Rod.astro";
-import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import scooper from "../assets/images/scooper.webp";
-import frabutik from "../assets/images/frabutik.webp";
 import hojkvalitet from "../assets/images/hojkvalitet.webp";
-
 import oplevelse from "../assets/images/oplevelse.webp";
 import saesonis from "../assets/images/saesonis.webp";
-import forside1 from "../assets/images/forside1.webp";
-import forside2 from "../assets/images/forside2.webp";
 import ishænder from "../assets/images/ishænder.webp";
 import "animate.css";
 import istidbutik from "/public/istidbutik.webp";
@@ -64,8 +58,8 @@ import smag from "../assets/images/smag.png";
       <h2 class="h2_mobil md:h2 text-rod-500">Økologisk nitrogen is</h2>
       <p class="pstor_mobil md:p text-blaa-900">
         Økologisk nitrogen-is fra hjertet af Nørrebro – friskfrosset på stedet
-        for en cremet, intens smagsoplevelse. <br /> Vi laver også catering i hele
-        Danmark!
+        for en cremet, intens smagsoplevelse. <br /> Vi laver også catering i
+        hele Danmark!
       </p>
       <div
         class="absolute z-[-1] top-[10%] left-[15%] group-hover:animate__animated group-hover:animate__tada"
@@ -411,15 +405,15 @@ import smag from "../assets/images/smag.png";
         </p>
       </div>
     </section>
-    <section class="bg-rod-100 md:grid md:grid-cols-2 p-M md:px-L">
-      <div class="grid content-center text-center md:text-start pb-S">
-        <h2 class="h2_mobil md:h2 text-blaa-600 pb-XS">EVENTS OG CATERING</h2>
-        <p class="pstor_mobil md:p text-rod-500 pb-XS">
-          Gør dit event til en uforglemmelig oplevelse <br /> Book vores nitrogen-is
-          catering i dag
+    <section class="bg-rod-100 md:grid md:grid-cols-2 py-M">
+      <div class="grid content-center md:text-start md:p-L p-M">
+        <h2 class="h2_mobil md:h2 text-blaa-600">EVENTS OG CATERING</h2>
+        <p class="pstor_mobil md:p text-rod-500">
+          Gør dit event til en uforglemmelig oplevelse <br /> Book vores
+          nitrogen-is catering i dag
         </p>
-        <div class="md:pt-XS">
-          <a href="event"><Button_S_Rod>BOOK NU</Button_S_Rod></a>
+        <div class="pt-XS">
+          <a href="event"><Button>BOOK NU</Button></a>
         </div>
       </div>
 
@@ -427,7 +421,7 @@ import smag from "../assets/images/smag.png";
         <Image
           src={brandbil}
           alt="Billede af et isevent."
-          class="h-[200px] w-[200px] md:h-[550px] md:w-[575px] object-cover object-center content-center mx-auto"
+          class="h-[250px] w-[250px] md:h-[550px] md:w-[575px] object-cover object-center content-center mx-auto"
           loading="lazy"
         />
       </div>
@@ -447,9 +441,9 @@ import smag from "../assets/images/smag.png";
         <p class="text-rod-500 pstor_mobil md:pstor">
           <span class="font-bold">Is er noget</span><br />
           <span class="font-bold">vidunderligt</span>
-          og det <br />
-          fortjener en <br />fremtid, ikke kun <br />
-          en fortid
+           og det <br />
+           fortjener en <br />fremtid, ikke kun <br />
+           en fortid
         </p>
       </div>
     </section>
@@ -565,9 +559,9 @@ import smag from "../assets/images/smag.png";
         />
       </div>
     </section>
-    <section class="bg-rod-50 p-M md:pt-XL md:h-[698px]">
+    <section class="bg-rod-50 md:pt-XL md:h-[698px]">
       <div class="grid grid-cols-1 md:grid-cols-2 justify-items-center md:px-L">
-        <div>
+        <div class="pt-M px-M pb-S">
           <div>
             <h2 class="h2_mobil md:h2 text-rod-500 pb-XS">
               Nyhedsbrev tilmelding
@@ -596,10 +590,10 @@ import smag from "../assets/images/smag.png";
             </form>
           </div>
         </div>
-        <div class="relative md:left-[52%]">
+        <div class="relative md:left-[203px]">
           <svg
             width="555"
-            height="525"
+            height="505"
             viewBox="0 0 355 325"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -610,9 +604,7 @@ import smag from "../assets/images/smag.png";
           </svg>
         </div>
 
-        <div
-          class="grid justify-center pt-M md:pt-XXXS absolute top-[810%] md:top-[850%] md:left-[80%] md:mt-L"
-        >
+        <div class="absolute top-[810%] md:top-[810%] md:right-[80px] md:mt-L">
           <svg
             width="289"
             height="297"

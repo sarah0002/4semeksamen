@@ -1,6 +1,5 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import event from "../assets/images/event.webp";
 import popup from "../assets/images/popup.webp";
@@ -1403,11 +1402,11 @@ import "motion";
             forkælelse til medarbejderne i kantinen. Pop-up-formatet giver
             uendelige muligheder. Vi kan servere for alt fra 100 til 2000 gæster
             eller flere – og det endda på ganske kort tid. <br /> Vi kan tilbyde
-            få eller mange forskellige smagsvarianter, lave ekstravagante iscocktails
-            eller blot servere en enkelt klassisk isvariant fra jeres stand på en
-            konference for at tiltrække og invitere potentielle kunder til en snak
-            om jeres service eller produkt. Alt, vi behøver, er et bord og adgang
-            til strøm.
+            få eller mange forskellige smagsvarianter, lave ekstravagante
+            iscocktails eller blot servere en enkelt klassisk isvariant fra
+            jeres stand på en konference for at tiltrække og invitere
+            potentielle kunder til en snak om jeres service eller produkt. Alt,
+            vi behøver, er et bord og adgang til strøm.
           </p>
         </div>
         <div class="order-2 md:order-1 md:justify-self-start">
@@ -1468,7 +1467,7 @@ import "motion";
           <Image
             src={workshop}
             alt="Billede af et isevent."
-            class="h-[300px] w-[300px] md:h-[520px] md:w-[500px] object-cover mr-auto ml-auto mt-S md:mt-0"
+            class="h-[82%] w-[82%] md:h-[520px] md:w-[500px] object-cover mr-auto ml-auto mt-S md:mt-0"
             loading="lazy"
           />
         </section>
@@ -1477,7 +1476,7 @@ import "motion";
 
     <section class="relative">
       <svg
-        class="absolute z-30 md:top-[100px] md:left-[100px] top-[20px] left-[20px] animate__animated animate__bounce animate__infinite animate__slow md:w-[120px] md:h-[120px]"
+        class="absolute z-30 md:top-[300px] md:left-[100px] top-[20px] left-[20px] animate__animated animate__bounce animate__infinite animate__slow md:w-[120px] md:h-[120px]"
         width="80"
         height="80"
         viewBox="0 0 489 578"
@@ -1565,7 +1564,7 @@ import "motion";
           stroke-miterlimit="10"></path>
       </svg>
       <svg
-        class="absolute z-30 md:top-[800px] md:left-[1450px] top-[1330px] right-[20px] rotate-center animate__slow md:w-[120px] md:h-[120px]"
+        class="absolute z-30 md:top-[880px] md:left-[1450px] top-[1330px] right-[20px] rotate-center animate__slow md:w-[120px] md:h-[120px]"
         width="80"
         height="80"
         viewBox="0 0 489 578"
@@ -1654,7 +1653,7 @@ import "motion";
       </svg>
     </section>
 
-    <section class="bg-gul-100 p-M pt-L pb-L md:p-L">
+    <section class="bg-gul-100 p-M pt-L pb-L md:p-L md:mt-XL">
       <div class="pb-S">
         <h2 class="h2_mobil md:h2 text-rod-500 text-center">
           Få et uforpligtet tilbud
@@ -1724,26 +1723,26 @@ import "motion";
 
           <!-- Kategori knapper -->
           <div
-            class="grid grid-cols-1 gap-S md:grid-cols-3 pb-S"
+            class="grid grid-cols-1 gap-XS md:grid-cols-3 pb-S"
             id="category-buttons"
           >
             <button
               type="button"
-              class="category-btn w-full border border-blaa-500 rounded-medium p-XXS"
+              class="category-btn w-full border border-blaa-500 rounded-medium p-XXS hover:bg-blaa-500 hover:text-blaa-50"
               data-value="BRANDBIL/CYKEL"
             >
               BRANDBIL/CYKEL
             </button>
             <button
               type="button"
-              class="category-btn w-full border border-blaa-500 rounded-medium p-XXS"
+              class="category-btn w-full border border-blaa-500 rounded-medium p-XXS hover:bg-blaa-500 hover:text-blaa-50"
               data-value="POP UP"
             >
               POP UP
             </button>
             <button
               type="button"
-              class="category-btn w-full border border-blaa-500 rounded-medium p-XXS"
+              class="category-btn w-full border border-blaa-500 rounded-medium p-XXS hover:bg-blaa-500 hover:text-blaa-50"
               data-value="WORKSHOP"
             >
               WORKSHOP
@@ -1762,7 +1761,7 @@ import "motion";
           <a href="tilmeld">
             <button
               type="button"
-              class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS"
+              class="w-full border border-blaa-500 rounded-medium p-XXS my-XXS hover:bg-blaa-500 hover:text-blaa-50"
               >SEND</button
             ></a
           >
