@@ -12,7 +12,7 @@ import is5 from "../assets/images/is5.webp";
 import is6 from "../assets/images/is6.webp";
 import is7 from "../assets/images/is7.webp";
 import data from "../assets/images/data.svg";
-import gallery6 from "../assets/images/gallery2.webp";
+import gallery2 from "../assets/images/gallery2.webp";
 ---
 
 <MainLayout title="VORES IS" page="is">
@@ -32,29 +32,31 @@ import gallery6 from "../assets/images/gallery2.webp";
         >
           Hvad gør Istids is helt unik?
         </h2>
-        <p
-          class="p_mobil md:p text-blaa-900 text-left md:text-left pb-XS md:max-w-[900px]"
-        >
-          Istid laver is på en anderledes måde: med flydende nitrogen, som
-          lynfryser isen ved minus 196 grader – direkte foran kunden. Det
-          betyder, at isen altid er frisklavet, og butikken har slet ingen
-          frysere.
-        </p>
+        <div id="tekst1">
+          <p
+            class="p_mobil md:p text-blaa-900 text-left md:text-left pb-XS md:max-w-[900px]"
+          >
+            Istid laver is på en anderledes måde: med flydende nitrogen, som
+            lynfryser isen ved minus 196 grader – direkte foran kunden. Det
+            betyder, at isen altid er frisklavet, og butikken har slet ingen
+            frysere.
+          </p>
 
-        <p
-          class="p_mobil md:p text-blaa-900 text-left md:text-left pb-M md:max-w-[800px]"
-        >
-          Den hurtige frysning giver en særlig cremet konsistens, fordi
-          iskrystaller ikke når at danne sig. Samtidig kan man bruge mindre
-          sukker og undgå tilsætningsstoffer, da isen ikke skal holde sig i lang
-          tid. Alt laves fra bunden med økologiske råvarer – for en ren,
-          naturlig og helt unik isoplevelse. <br />Isen serveres i vores
-          hjemmelavede kardemommevaffel eller i bæger – i tre størrelser. Hos os
-          vælger du én smag ad gangen – så får du den fulde oplevelse.
-        </p>
+          <p
+            class="p_mobil md:p text-blaa-900 text-left md:text-left pb-M md:max-w-[800px]"
+          >
+            Den hurtige frysning giver en særlig cremet konsistens, fordi
+            iskrystaller ikke når at danne sig. Samtidig kan man bruge mindre
+            sukker og undgå tilsætningsstoffer, da isen ikke skal holde sig i
+            lang tid. Alt laves fra bunden med økologiske råvarer – for en ren,
+            naturlig og helt unik isoplevelse. <br />Isen serveres i vores
+            hjemmelavede kardemommevaffel eller i bæger – i tre størrelser. Hos
+            os vælger du én smag ad gangen – så får du den fulde oplevelse.
+          </p>
+        </div>
         <div>
           <Image
-            src={gallery6}
+            src={gallery2}
             alt="billede af is"
             class="w-[300px] mx-auto mt-4 md:w-[500px] md:absolute top-[200px] left-[980px] rounded-[300px] md:mb-XL"
             loading="lazy"
@@ -95,8 +97,8 @@ import gallery6 from "../assets/images/gallery2.webp";
         <div>
           <Image
             src={vanilje}
-            alt="Billede af en person der scooper is."
-            class="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-[400px] z-20 border-[30px] border-gul-100 top-[10px] left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-[100px] md:left-[300px] md:translate-x-0 md:translate-y-0 md:bottom-[50px] md:left-[90px]"
+            alt="Billede af vanilje "
+            class="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-[400px] z-20 border-[30px] border-gul-100 top-[10px] left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-[100px] md:left-[302px] md:translate-x-0 md:translate-y-0 md:bottom-[50px] md:left-[90px]"
             loading="lazy"
           />
         </div>
@@ -127,8 +129,8 @@ import gallery6 from "../assets/images/gallery2.webp";
         <div>
           <Image
             src={salty}
-            alt="Billede af en person der scooper is."
-            class="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-[400px] z-20 border-[30px] border-gul-100 top-[10px] left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-[100px] md:left-[300px] md:translate-x-0 md:translate-y-0 md:bottom-[50px] md:left-[90px]"
+            alt="Billede af salty caramel"
+            class="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-[400px] z-20 border-[30px] border-gul-100 top-[10px] left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-[100px] md:left-[302px] md:translate-x-0 md:translate-y-0 md:bottom-[50px] md:left-[90px]"
             loading="lazy"
           />
         </div>
@@ -160,8 +162,8 @@ import gallery6 from "../assets/images/gallery2.webp";
         <div>
           <Image
             src={choko}
-            alt="Billede af en person der scooper is."
-            class="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-[400px] z-20 border-[30px] border-gul-100 top-[10px] left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-[100px] md:left-[300px] md:translate-x-0 md:translate-y-0 md:bottom-[50px] md:left-[90px]"
+            alt="Billede af chokolade."
+            class="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-[400px] z-20 border-[30px] border-gul-100 top-[10px] left-1/2 -translate-x-1/2 -translate-y-1/2 md:top-[100px] md:left-[302px] md:translate-x-0 md:translate-y-0 md:bottom-[50px] md:left-[90px]"
             loading="lazy"
           />
         </div>
@@ -260,4 +262,14 @@ import gallery6 from "../assets/images/gallery2.webp";
       </h3>
     </section>
   </article>
+  <script>
+    import { inView } from "motion";
+
+    // <-- inview tekst1 -->
+    const tekst1zoomIn = document.querySelector("#tekst1");
+
+    inView(tekst1zoomIn, () => {
+      tekst1zoomIn.classList.add("animate__animated", "animate__zoomIn");
+    });
+  </script>
 </MainLayout>
