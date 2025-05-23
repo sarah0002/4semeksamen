@@ -9,7 +9,13 @@ import Button from "../components/Button.astro";
 import "motion";
 ---
 
-<MainLayout title="EVENTS OG CATERING" page="event">
+<MainLayout
+  title="EVENTS OG CATERING"
+  page="event"
+  description="Book ISTID til dine events og catering - vi leverer frisklavet is med flydende nitrogen, der skaber en unik og mindeværdig oplevelse til enhver lejlighed."
+  ogtitle="Events & Catering med ISTID - Unik isoplevelse til din fest"
+  ogdescription="Gør dine events uforglemmelige med ISTIDs is lavet på flydende nitrogen. Perfekt til fester, firmaarrangementer og særlige lejligheder."
+>
   <article class="">
     <section class="bg-gron-200 p-M md:p-L">
       <h1 class="h1_mobil text-gron-800 text-center md:h1">
@@ -40,7 +46,7 @@ import "motion";
           det enkelt med vores mobile isbar – uanset om du venter 100 eller 1000
           gæster.
         </p>
-        <Button>BOOK OS NU</Button>
+        <a href="#booking"><Button>BOOK OS NU</Button></a>
       </section>
       <section>
         <Image
@@ -1396,11 +1402,11 @@ import "motion";
             forkælelse til medarbejderne i kantinen. Pop-up-formatet giver
             uendelige muligheder. Vi kan servere for alt fra 100 til 2000 gæster
             eller flere – og det endda på ganske kort tid. <br /> Vi kan tilbyde
-            få eller mange forskellige smagsvarianter, lave ekstravagante
-            iscocktails eller blot servere en enkelt klassisk isvariant fra
-            jeres stand på en konference for at tiltrække og invitere
-            potentielle kunder til en snak om jeres service eller produkt. Alt,
-            vi behøver, er et bord og adgang til strøm.
+            få eller mange forskellige smagsvarianter, lave ekstravagante iscocktails
+            eller blot servere en enkelt klassisk isvariant fra jeres stand på en
+            konference for at tiltrække og invitere potentielle kunder til en snak
+            om jeres service eller produkt. Alt, vi behøver, er et bord og adgang
+            til strøm.
           </p>
         </div>
         <div class="order-2 md:order-1 md:justify-self-start">
@@ -1645,7 +1651,7 @@ import "motion";
       </svg>
     </section>
 
-    <section class="bg-gul-100 p-M pt-L pb-L md:p-L md:mt-XL">
+    <section class="bg-gul-100 p-M pt-L pb-L md:p-L md:mt-XL" id="booking">
       <div class="pb-S">
         <h2 class="h2_mobil md:h2 text-rod-500 text-center">
           Få et uforpligtet tilbud
@@ -1784,12 +1790,14 @@ import "motion";
             placeholder="Bemærkninger"></textarea>
 
           <!-- Submit knap -->
-          <button
-            type="submit"
-            class="w-full border border-blaa-500 rounded-medium text-blaa-600 p-XXS my-XXS hover:bg-blaa-600 hover:text-blaa-50"
+          <a href="tilmeld"
+            ><button
+              type="button"
+              class="w-full border border-blaa-500 rounded-medium text-blaa-600 p-XXS my-XXS hover:bg-blaa-600 hover:text-blaa-50"
+            >
+              SEND
+            </button></a
           >
-            SEND
-          </button>
         </form>
       </div>
     </section>
