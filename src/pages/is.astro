@@ -4,14 +4,8 @@ import { Image } from "astro:assets";
 import vanilje from "../assets/images/vanilje.webp";
 import salty from "../assets/images/salty.webp";
 import choko from "../assets/images/choko.webp";
-import is1 from "../assets/images/is1.webp";
-import is2 from "../assets/images/is2.webp";
-import is3 from "../assets/images/is3.webp";
-import is4 from "../assets/images/is4.webp";
-import is5 from "../assets/images/is5.webp";
-import is6 from "../assets/images/is6.webp";
-import is7 from "../assets/images/is7.webp";
 import data from "../assets/images/data.svg";
+import issamling from "../assets/images/issamling.webp";
 import gallery2 from "../assets/images/gallery2.webp";
 ---
 
@@ -86,8 +80,8 @@ import gallery2 from "../assets/images/gallery2.webp";
       <div class="pstor_mobil md:pstor text-gul-900">
         <div class="bg-gul-100 pt-L md:pt-M p-M mb-XL">
           <p class="md:ml-[500px] pb-XS">
-            <span class="font-bold">CLASSIC VANILLA</span> er en af vores faste favoritter
-            - enkel, cremet og fyldt med smag.
+            <span class="font-bold">CLASSIC VANILLA</span> er en af vores faste
+            favoritter - enkel, cremet og fyldt med smag.
           </p>
           <p class="md:ml-[500px] pb-XS">
             Du kan toppe den med hjemmelavede saucer og knas og forvandle den
@@ -114,7 +108,8 @@ import gallery2 from "../assets/images/gallery2.webp";
         <div class="bg-gul-100 p-M pt-L md:pt-M">
           <p class="md:ml-[500px] pb-XS">
             <span class="font-bold">SALTY CARAMEL</span> er en af vores populære
-            standardvarianter - balancen mellem sødt og salt gør den uimodståelig.
+            standardvarianter - balancen mellem sødt og salt gør den
+            uimodståelig.
           </p>
           <p class="md:ml-[500px] pb-XS">
             Gør den ekstra lækker med dine foretrukne toppings og lav din egen
@@ -137,8 +132,9 @@ import gallery2 from "../assets/images/gallery2.webp";
       <div class="pstor_mobil md:pstor text-gul-900">
         <div class="bg-gul-100 p-M pt-L md:pt-M">
           <p class="md:ml-[500px] pb-XS">
-            <span class="font-bold">CHOCOLATE SORBET</span> er en fast del af vores
-            sortiment - intens i smagen, helt uden mælk og stadig fantastisk cremet.
+            <span class="font-bold">CHOCOLATE SORBET</span> er en fast del af
+            vores sortiment - intens i smagen, helt uden mælk og stadig
+            fantastisk cremet.
           </p>
           <p class="md:ml-[500px] pb-XS">
             Den er perfekt som den er eller med et twist af toppings.
@@ -181,78 +177,29 @@ import gallery2 from "../assets/images/gallery2.webp";
       />
     </div>
   </section>
-  <section class="grid grid-cols-7 pt-L">
-    <div class="">
-      <Image
-        src={is1}
-        alt="Billede af is"
-        class="h-[200px] md:h-[300px] object-cover"
-        loading="lazy"
-      />
-    </div>
-    <div class="">
-      <Image
-        src={is2}
-        alt="Billede af is"
-        class="h-[200px] md:h-[300px] object-cover"
-        loading="lazy"
-      />
-    </div>
-    <div class="">
-      <Image
-        src={is3}
-        alt="Billede af is"
-        class="h-[200px] md:h-[300px] object-cover"
-        loading="lazy"
-      />
-    </div>
-    <div class="">
-      <Image
-        src={is4}
-        alt="Billede af is"
-        class="h-[200px] md:h-[300px] object-cover"
-        loading="lazy"
-      />
-    </div>
-    <div class="">
-      <Image
-        src={is5}
-        alt="Billede af is"
-        class="h-[200px] md:h-[300px] object-cover"
-        loading="lazy"
-      />
-    </div>
-    <div class="">
-      <Image
-        src={is6}
-        alt="Billede af is"
-        class="h-[200px] md:h-[300px] object-cover"
-        loading="lazy"
-      />
-    </div>
-    <div class="">
-      <Image
-        src={is7}
-        alt="Billede af is"
-        class="h-[200px] md:h-[300px] object-cover"
-        loading="lazy"
-      />
-    </div>
+
+  <section class="relative pt-L md:pt-XL">
+    <Image
+      src={issamling}
+      alt="Billeder af sæsonens is"
+      class="absolute left-1/2 -translate-x-1/2 -top-[-50px] md:-top-[-50px] z-12"
+      loading="lazy"
+    />
+
+    <section class="bg-rod-50 z-10">
+      <h3 class="h3_mobil md:h3 text-gron-800 text-center p-M pt-M md:pt-XL">
+        Kom forbi butikken og se hvad månedenS is er
+      </h3>
+    </section>
   </section>
-  <section class="bg-gron-200">
-    <h3 class="h3_mobil md:h3 text-gron-800 text-center p-M">
-      Kom forbi butikken og se hvad månedenS is er
-    </h3>
-  </section>
+  <script>
+    import { inView } from "motion";
+
+    // <-- inview tekst1 -->
+    const tekst1zoomIn = document.querySelector("#tekst1");
+
+    inView(tekst1zoomIn, () => {
+      tekst1zoomIn.classList.add("animate__animated", "animate__zoomIn");
+    });
+  </script>
 </MainLayout>
-<script>
-  import { inView } from "motion";
-
-  // <-- inview tekst1 -->
-  const tekst1zoomIn = document.querySelector("#tekst1");
-
-  inView(tekst1zoomIn, () => {
-    tekst1zoomIn.classList.add("animate__animated", "animate__zoomIn");
-  });
-</script>
-/>
