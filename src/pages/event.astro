@@ -54,8 +54,13 @@ import "motion";
         <Image
           src={event}
           id="sektion11"
+<<<<<<< HEAD
           alt="Billede fra et event"
           class="md:h-[730px] object-cover"
+=======
+          alt="Billede af et event."
+          class="md:h-[930px] object-cover"
+>>>>>>> a96bb063e33759d8208e36a963d6b4f530394d62
           loading="lazy"
         />
       </section>
@@ -1390,10 +1395,56 @@ import "motion";
         >
       </section>
     </section>
+    <section class="md:grid grid-cols-2 p-S md:p-L">
+      <div class="bg-blaa-50 p-M md:px-L">
+        <h2 class="h2_mobil md:h2 text-blaa-600 pb-XS">Alt om bookingen</h2>
+        <p class="pstor_mobil md:pstor text-blaa-900 pb-S">
+          ISTID leverer økologisk is med røg og topping - klar til firmafester,
+          konferencer og udendørs events. Vi står for alt fra personale til
+          servering og transport.
+        </p>
+        <p class="p_mobil md:p text-blaa-900">
+          Priserne er vejledende, og vi sammensætter altid løsningen efter jeres
+          behov. Vores cateringtilbud gælder ved events med minimum 100 gæster.
+          Udfyld kontaktformularen herunder - så sender vi et uforpligtende og
+          skræddersyet tilbud hurtigst muligt
+        </p>
+      </div>
+
+      <div class="bg-blaa-200 p-M md:px-L">
+        <h3 class="h4_mobil md:h4 text-blaa-800 text-center pb-XS">
+          Eksempel på pakke
+        </h3>
+        <p class="pstor_mobil md:pstor text-blaa-800 text-center pb-XS">
+          100 is med topping
+        </p>
+        <p class="pstor_mobil md:pstor text-blaa-800 text-center pb-XS">
+          2 timers servering
+        </p>
+        <p class="pstor_mobil md:pstor text-blaa-800 text-center pb-XS">
+          Professionelt personale
+        </p>
+        <p class="pstor_mobil md:pstor text-blaa-800 text-center pb-XS">
+          Emballage og transport i Københavnsområdet
+        </p>
+        <h3 class="h4_mobil md:h4 text-blaa-800 text-center pb-M">
+          pris fra 7500 dkk ex. moms
+        </h3>
+        <h3 class="h4_mobil md:h4 text-blaa-800 text-center pb-XS">
+          ved større events:
+        </h3>
+        <p class="pstor_mobil md:pstor text-blaa-800 text-center pb-XS">
+          + 38 DKK pr. ekstra is
+        </p>
+        <p class="pstor_mobil md:pstor text-blaa-800 text-center">
+          +28 DKK pr. smagsportion (velegnet til f.eks. messer og udstillinger)
+        </p>
+      </div>
+    </section>
     <section class="h-[250vh] relative">
       <section
         id="popup"
-        class="popup bg-rod-50 p-M md:p-L md:grid md:grid-cols-2 sticky top-[1vh] md:h-[90vh]"
+        class="popup bg-rod-50 p-M md:p-L md:grid md:grid-cols-2 sticky top-[1vh] md:h-[100vh]"
       >
         <div class="order-1 md:order-2 content-center">
           <h2 class="h2_mobil text-rod-500 pb-XS md:h2 md:text-end">
@@ -1404,11 +1455,11 @@ import "motion";
             forkælelse til medarbejderne i kantinen. Pop-up-formatet giver
             uendelige muligheder. Vi kan servere for alt fra 100 til 2000 gæster
             eller flere - og det endda på ganske kort tid. <br /> Vi kan tilbyde
-            få eller mange forskellige smagsvarianter, lave ekstravagante iscocktails
-            eller blot servere en enkelt klassisk isvariant fra jeres stand på en
-            konference for at tiltrække og invitere potentielle kunder til en snak
-            om jeres service eller produkt. Alt, vi behøver, er et bord og adgang
-            til strøm.
+            få eller mange forskellige smagsvarianter, lave ekstravagante
+            iscocktails eller blot servere en enkelt klassisk isvariant fra
+            jeres stand på en konference for at tiltrække og invitere
+            potentielle kunder til en snak om jeres service eller produkt. Alt,
+            vi behøver, er et bord og adgang til strøm.
           </p>
         </div>
         <div class="order-2 md:order-1 md:justify-self-start">
@@ -1422,7 +1473,7 @@ import "motion";
       </section>
       <section
         id="bil"
-        class="bg-gron-200 p-M md:p-L md:grid md:grid-cols-2 sticky top-[1vh] md:h-[90vh]"
+        class="bg-gron-200 p-M md:p-L md:grid md:grid-cols-2 sticky top-[1vh] md:h-[100vh]"
       >
         <section class="content-center">
           <h2 class="h2_mobil text-rod-500 pb-XS md:h2 md:text-start">
@@ -1449,7 +1500,7 @@ import "motion";
       </section>
       <section
         id="team"
-        class="bg-blaa-50 md:p-L p-M md:grid md:grid-cols-2 sticky top-[1vh] md:h-[90vh]"
+        class="bg-blaa-50 md:p-L p-M md:grid md:grid-cols-2 sticky top-[1vh] md:h-[100vh]"
       >
         <section class="order-1 md:order-2 content-center">
           <h2 class="h2_mobil text-rod-500 pb-XS md:h2 md:text-end">
@@ -1564,7 +1615,7 @@ import "motion";
           stroke-miterlimit="10"></path>
       </svg>
       <svg
-        class="absolute z-30 md:top-[880px] md:left-[1450px] top-[1330px] right-[20px] rotate-center animate__slow md:w-[120px] md:h-[120px]"
+        class="absolute z-30 md:top-[880px] md:left-[1250px] top-[1330px] right-[20px] rotate-center animate__slow md:w-[120px] md:h-[120px]"
         width="80"
         height="80"
         viewBox="0 0 489 578"
@@ -1653,7 +1704,7 @@ import "motion";
       </svg>
     </section>
 
-    <section class="bg-gul-100 p-M pt-L pb-L md:p-L md:mt-XL" id="booking">
+    <section class="bg-gul-100 p-M pt-XXL pb-L md:p-L md:mt-XXXL" id="booking">
       <div class="pb-S">
         <h2 class="h2_mobil md:h2 text-rod-500 text-center">
           Få et uforpligtet tilbud
@@ -1792,7 +1843,7 @@ import "motion";
             placeholder="Bemærkninger"></textarea>
 
           <!-- Submit knap -->
-          <a href="tilmeld"
+          <a href="/tilmeld"
             ><button
               type="button"
               class="w-full border border-blaa-500 rounded-medium text-blaa-600 p-XXS my-XXS hover:bg-blaa-600 hover:text-blaa-50"

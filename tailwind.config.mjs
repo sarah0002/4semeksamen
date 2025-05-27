@@ -73,6 +73,7 @@ export default {
       L: "120px",
       XL: "180px",
       XXL: "240px",
+      XXXL: "300px",
     },
 
     /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
@@ -90,8 +91,7 @@ export default {
       h3_desk: ["32px", { lineHeight: "3rem" }],
       h2_desk: ["48px", { lineHeight: "3.75rem" }],
       h1_desk: ["65px", { lineHeight: "4.5rem" }],
-    display_desk: ["85px", { lineHeight: "6rem" }],
-
+      display_desk: ["85px", { lineHeight: "6rem" }],
 
       p_knap_mobil: ["14px", { lineHeight: "1.75rem" }],
       p_mobil: ["12px", { lineHeight: "1.25rem" }],
@@ -128,9 +128,7 @@ export default {
     //     drop25: '4px 4px 4px 0 rgb(0 0 0 / 0.25)', /* x y blur spread farve / opacity */
     // },
 
-    extend: {
-    },
-    
+    extend: {},
   },
   plugins: [
     require("@tailwindcss/typography"),
@@ -138,6 +136,4 @@ export default {
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/container-queries"),
   ],
-
-  
 };
